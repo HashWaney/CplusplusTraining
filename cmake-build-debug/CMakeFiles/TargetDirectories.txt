@@ -1,0 +1,4 @@
+/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/const.dir
+/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/Review.dir
