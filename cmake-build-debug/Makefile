@@ -136,59 +136,59 @@ Review/fast:
 	$(MAKE) -f CMakeFiles/Review.dir/build.make CMakeFiles/Review.dir/build
 .PHONY : Review/fast
 
-01_const.o: 01_const.cpp.o
+extern/01_const.o: extern/01_const.cpp.o
 
-.PHONY : 01_const.o
-
-# target to build an object file
-01_const.cpp.o:
-	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/01_const.cpp.o
-.PHONY : 01_const.cpp.o
-
-01_const.i: 01_const.cpp.i
-
-.PHONY : 01_const.i
-
-# target to preprocess a source file
-01_const.cpp.i:
-	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/01_const.cpp.i
-.PHONY : 01_const.cpp.i
-
-01_const.s: 01_const.cpp.s
-
-.PHONY : 01_const.s
-
-# target to generate assembly for a file
-01_const.cpp.s:
-	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/01_const.cpp.s
-.PHONY : 01_const.cpp.s
-
-01_const_extern.o: 01_const_extern.cpp.o
-
-.PHONY : 01_const_extern.o
+.PHONY : extern/01_const.o
 
 # target to build an object file
-01_const_extern.cpp.o:
-	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/01_const_extern.cpp.o
-.PHONY : 01_const_extern.cpp.o
+extern/01_const.cpp.o:
+	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/extern/01_const.cpp.o
+.PHONY : extern/01_const.cpp.o
 
-01_const_extern.i: 01_const_extern.cpp.i
+extern/01_const.i: extern/01_const.cpp.i
 
-.PHONY : 01_const_extern.i
+.PHONY : extern/01_const.i
 
 # target to preprocess a source file
-01_const_extern.cpp.i:
-	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/01_const_extern.cpp.i
-.PHONY : 01_const_extern.cpp.i
+extern/01_const.cpp.i:
+	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/extern/01_const.cpp.i
+.PHONY : extern/01_const.cpp.i
 
-01_const_extern.s: 01_const_extern.cpp.s
+extern/01_const.s: extern/01_const.cpp.s
 
-.PHONY : 01_const_extern.s
+.PHONY : extern/01_const.s
 
 # target to generate assembly for a file
-01_const_extern.cpp.s:
-	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/01_const_extern.cpp.s
-.PHONY : 01_const_extern.cpp.s
+extern/01_const.cpp.s:
+	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/extern/01_const.cpp.s
+.PHONY : extern/01_const.cpp.s
+
+extern/01_const_extern.o: extern/01_const_extern.cpp.o
+
+.PHONY : extern/01_const_extern.o
+
+# target to build an object file
+extern/01_const_extern.cpp.o:
+	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/extern/01_const_extern.cpp.o
+.PHONY : extern/01_const_extern.cpp.o
+
+extern/01_const_extern.i: extern/01_const_extern.cpp.i
+
+.PHONY : extern/01_const_extern.i
+
+# target to preprocess a source file
+extern/01_const_extern.cpp.i:
+	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/extern/01_const_extern.cpp.i
+.PHONY : extern/01_const_extern.cpp.i
+
+extern/01_const_extern.s: extern/01_const_extern.cpp.s
+
+.PHONY : extern/01_const_extern.s
+
+# target to generate assembly for a file
+extern/01_const_extern.cpp.s:
+	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/extern/01_const_extern.cpp.s
+.PHONY : extern/01_const_extern.cpp.s
 
 main.o: main.cpp.o
 
@@ -227,12 +227,12 @@ help:
 	@echo "... edit_cache"
 	@echo "... const"
 	@echo "... Review"
-	@echo "... 01_const.o"
-	@echo "... 01_const.i"
-	@echo "... 01_const.s"
-	@echo "... 01_const_extern.o"
-	@echo "... 01_const_extern.i"
-	@echo "... 01_const_extern.s"
+	@echo "... extern/01_const.o"
+	@echo "... extern/01_const.i"
+	@echo "... extern/01_const.s"
+	@echo "... extern/01_const_extern.o"
+	@echo "... extern/01_const_extern.i"
+	@echo "... extern/01_const_extern.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

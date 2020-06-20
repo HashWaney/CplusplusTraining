@@ -57,42 +57,42 @@ include CMakeFiles/const.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/const.dir/flags.make
 
-CMakeFiles/const.dir/01_const.cpp.o: CMakeFiles/const.dir/flags.make
-CMakeFiles/const.dir/01_const.cpp.o: ../01_const.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/const.dir/01_const.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/const.dir/01_const.cpp.o -c /Users/wangqing/Desktop/JNI/CPP/Review/01_const.cpp
+CMakeFiles/const.dir/extern/01_const.cpp.o: CMakeFiles/const.dir/flags.make
+CMakeFiles/const.dir/extern/01_const.cpp.o: ../extern/01_const.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/const.dir/extern/01_const.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/const.dir/extern/01_const.cpp.o -c /Users/wangqing/Desktop/JNI/CPP/Review/extern/01_const.cpp
 
-CMakeFiles/const.dir/01_const.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/const.dir/01_const.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangqing/Desktop/JNI/CPP/Review/01_const.cpp > CMakeFiles/const.dir/01_const.cpp.i
+CMakeFiles/const.dir/extern/01_const.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/const.dir/extern/01_const.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangqing/Desktop/JNI/CPP/Review/extern/01_const.cpp > CMakeFiles/const.dir/extern/01_const.cpp.i
 
-CMakeFiles/const.dir/01_const.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/const.dir/01_const.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangqing/Desktop/JNI/CPP/Review/01_const.cpp -o CMakeFiles/const.dir/01_const.cpp.s
+CMakeFiles/const.dir/extern/01_const.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/const.dir/extern/01_const.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangqing/Desktop/JNI/CPP/Review/extern/01_const.cpp -o CMakeFiles/const.dir/extern/01_const.cpp.s
 
-CMakeFiles/const.dir/01_const_extern.cpp.o: CMakeFiles/const.dir/flags.make
-CMakeFiles/const.dir/01_const_extern.cpp.o: ../01_const_extern.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/const.dir/01_const_extern.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/const.dir/01_const_extern.cpp.o -c /Users/wangqing/Desktop/JNI/CPP/Review/01_const_extern.cpp
+CMakeFiles/const.dir/extern/01_const_extern.cpp.o: CMakeFiles/const.dir/flags.make
+CMakeFiles/const.dir/extern/01_const_extern.cpp.o: ../extern/01_const_extern.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/const.dir/extern/01_const_extern.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/const.dir/extern/01_const_extern.cpp.o -c /Users/wangqing/Desktop/JNI/CPP/Review/extern/01_const_extern.cpp
 
-CMakeFiles/const.dir/01_const_extern.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/const.dir/01_const_extern.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangqing/Desktop/JNI/CPP/Review/01_const_extern.cpp > CMakeFiles/const.dir/01_const_extern.cpp.i
+CMakeFiles/const.dir/extern/01_const_extern.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/const.dir/extern/01_const_extern.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangqing/Desktop/JNI/CPP/Review/extern/01_const_extern.cpp > CMakeFiles/const.dir/extern/01_const_extern.cpp.i
 
-CMakeFiles/const.dir/01_const_extern.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/const.dir/01_const_extern.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangqing/Desktop/JNI/CPP/Review/01_const_extern.cpp -o CMakeFiles/const.dir/01_const_extern.cpp.s
+CMakeFiles/const.dir/extern/01_const_extern.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/const.dir/extern/01_const_extern.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangqing/Desktop/JNI/CPP/Review/extern/01_const_extern.cpp -o CMakeFiles/const.dir/extern/01_const_extern.cpp.s
 
 # Object files for target const
 const_OBJECTS = \
-"CMakeFiles/const.dir/01_const.cpp.o" \
-"CMakeFiles/const.dir/01_const_extern.cpp.o"
+"CMakeFiles/const.dir/extern/01_const.cpp.o" \
+"CMakeFiles/const.dir/extern/01_const_extern.cpp.o"
 
 # External object files for target const
 const_EXTERNAL_OBJECTS =
 
-const: CMakeFiles/const.dir/01_const.cpp.o
-const: CMakeFiles/const.dir/01_const_extern.cpp.o
+const: CMakeFiles/const.dir/extern/01_const.cpp.o
+const: CMakeFiles/const.dir/extern/01_const_extern.cpp.o
 const: CMakeFiles/const.dir/build.make
 const: CMakeFiles/const.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable const"
