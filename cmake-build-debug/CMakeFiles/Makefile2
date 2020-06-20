@@ -53,8 +53,9 @@ CMAKE_BINARY_DIR = /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/const.dir/all
 all: CMakeFiles/static.dir/all
+all: CMakeFiles/this.dir/all
+all: CMakeFiles/const.dir/all
 all: CMakeFiles/Review.dir/all
 
 .PHONY : all
@@ -65,38 +66,12 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/const.dir/clean
 clean: CMakeFiles/static.dir/clean
+clean: CMakeFiles/this.dir/clean
+clean: CMakeFiles/const.dir/clean
 clean: CMakeFiles/Review.dir/clean
 
 .PHONY : clean
-
-#=============================================================================
-# Target rules for target CMakeFiles/const.dir
-
-# All Build rule for target.
-CMakeFiles/const.dir/all:
-	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/depend
-	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=3,4,5 "Built target const"
-.PHONY : CMakeFiles/const.dir/all
-
-# Build rule for subdir invocation for target.
-CMakeFiles/const.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles 3
-	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/const.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles 0
-.PHONY : CMakeFiles/const.dir/rule
-
-# Convenience name for target.
-const: CMakeFiles/const.dir/rule
-
-.PHONY : const
-
-# clean rule for target.
-CMakeFiles/const.dir/clean:
-	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/clean
-.PHONY : CMakeFiles/const.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/static.dir
@@ -124,6 +99,60 @@ static: CMakeFiles/static.dir/rule
 CMakeFiles/static.dir/clean:
 	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/clean
 .PHONY : CMakeFiles/static.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/this.dir
+
+# All Build rule for target.
+CMakeFiles/this.dir/all:
+	$(MAKE) -f CMakeFiles/this.dir/build.make CMakeFiles/this.dir/depend
+	$(MAKE) -f CMakeFiles/this.dir/build.make CMakeFiles/this.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target this"
+.PHONY : CMakeFiles/this.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/this.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/this.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/this.dir/rule
+
+# Convenience name for target.
+this: CMakeFiles/this.dir/rule
+
+.PHONY : this
+
+# clean rule for target.
+CMakeFiles/this.dir/clean:
+	$(MAKE) -f CMakeFiles/this.dir/build.make CMakeFiles/this.dir/clean
+.PHONY : CMakeFiles/this.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/const.dir
+
+# All Build rule for target.
+CMakeFiles/const.dir/all:
+	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/depend
+	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=3,4,5 "Built target const"
+.PHONY : CMakeFiles/const.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/const.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/const.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/const.dir/rule
+
+# Convenience name for target.
+const: CMakeFiles/const.dir/rule
+
+.PHONY : const
+
+# clean rule for target.
+CMakeFiles/const.dir/clean:
+	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/clean
+.PHONY : CMakeFiles/const.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Review.dir

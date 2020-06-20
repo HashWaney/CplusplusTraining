@@ -35,7 +35,7 @@ void _07_functestconstpointer() {
 // const 位于*的左侧，就是const用来修饰指针所指向的变量
 // 被const修饰的又是常量，所以指针指向的是常量。即指向常量的指针
     const char *a; // 指向const对象的指针或者说指向常量的指针
-    char const *j; //
+    char const *j; // 也就是说被const修饰的指针指向的内容不能随意更改。
 
 // const位于*的右侧，const修饰的变量需要初始化，
     const char *const p = nullptr;

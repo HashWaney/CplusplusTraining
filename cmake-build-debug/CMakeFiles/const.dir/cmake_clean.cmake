@@ -1,6 +1,6 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/const.dir/extern/01_const.cpp.o"
-  "CMakeFiles/const.dir/extern/01_const_extern.cpp.o"
+  "CMakeFiles/const.dir/const/01_const.cpp.o"
+  "CMakeFiles/const.dir/const/01_const_extern.cpp.o"
   "const"
   "const.pdb"
 )

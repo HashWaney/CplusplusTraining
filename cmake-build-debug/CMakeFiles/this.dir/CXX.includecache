@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wangqing/Desktop/JNI/CPP/Review/this/03_this.cpp
+iostream
+/Users/wangqing/Desktop/JNI/CPP/Review/this/iostream
+cstring
+/Users/wangqing/Desktop/JNI/CPP/Review/this/cstring
+

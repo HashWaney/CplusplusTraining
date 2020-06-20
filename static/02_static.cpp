@@ -154,12 +154,14 @@ int main() {
         // 进入到static析构中<<  // 说明了函数执行完之前一步是调用了该实例的析构函数。即生命周期与程序的结束同步。
     }
 
-    cout << " color1.i-> " << color1.i << " color2.i-> " << color2.i << endl;
 
     InvokeStaticFunction invokeStaticFunction;
 
     invokeStaticFunction.printMsg(1);
     InvokeStaticFunction::printMsg(2);
+
+    cout << " color1.i-> " << color1.i << " color2.i-> " << color2.i << endl;
+
 
 
 
