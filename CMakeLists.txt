@@ -11,3 +11,6 @@ add_executable(static
 
 add_executable(this
         this/03_this.cpp)
+
+add_executable(inline
+        inline/04_inline.cpp)

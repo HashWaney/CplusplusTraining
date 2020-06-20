@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named inline
+
+# Build rule for target.
+inline: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 inline
+.PHONY : inline
+
+# fast build rule for target.
+inline/fast:
+	$(MAKE) -f CMakeFiles/inline.dir/build.make CMakeFiles/inline.dir/build
+.PHONY : inline/fast
+
+#=============================================================================
 # Target rules for targets named static
 
 # Build rule for target.
@@ -216,6 +229,33 @@ const/01_const_extern.cpp.s:
 	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/const/01_const_extern.cpp.s
 .PHONY : const/01_const_extern.cpp.s
 
+inline/04_inline.o: inline/04_inline.cpp.o
+
+.PHONY : inline/04_inline.o
+
+# target to build an object file
+inline/04_inline.cpp.o:
+	$(MAKE) -f CMakeFiles/inline.dir/build.make CMakeFiles/inline.dir/inline/04_inline.cpp.o
+.PHONY : inline/04_inline.cpp.o
+
+inline/04_inline.i: inline/04_inline.cpp.i
+
+.PHONY : inline/04_inline.i
+
+# target to preprocess a source file
+inline/04_inline.cpp.i:
+	$(MAKE) -f CMakeFiles/inline.dir/build.make CMakeFiles/inline.dir/inline/04_inline.cpp.i
+.PHONY : inline/04_inline.cpp.i
+
+inline/04_inline.s: inline/04_inline.cpp.s
+
+.PHONY : inline/04_inline.s
+
+# target to generate assembly for a file
+inline/04_inline.cpp.s:
+	$(MAKE) -f CMakeFiles/inline.dir/build.make CMakeFiles/inline.dir/inline/04_inline.cpp.s
+.PHONY : inline/04_inline.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -304,9 +344,10 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... inline"
+	@echo "... edit_cache"
 	@echo "... static"
 	@echo "... this"
-	@echo "... edit_cache"
 	@echo "... const"
 	@echo "... Review"
 	@echo "... const/01_const.o"
@@ -315,6 +356,9 @@ help:
 	@echo "... const/01_const_extern.o"
 	@echo "... const/01_const_extern.i"
 	@echo "... const/01_const_extern.s"
+	@echo "... inline/04_inline.o"
+	@echo "... inline/04_inline.i"
+	@echo "... inline/04_inline.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
