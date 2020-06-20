@@ -48,15 +48,29 @@ public:
     };
 };
 
- class TestStatic {
+class TestStatic {
 public:
-     TestStatic() {
+    TestStatic() {
         cout << " 进入到static构造中<< " << endl;
 
     };
 
     ~TestStatic() {
         cout << " 进入到static析构中<< " << endl;
+    }
+};
+
+class InvokeStaticFunction {
+
+public:
+    static void printMsg(int x) {
+        if (x == 2) {
+            cout << "类名 '::' 方式调用方法 打印--<<<<< " << " hello static function " << endl;
+        } else {
+            cout << "对象 '.' 方式调用方法 打印--<<<< " << " hello static function " << endl;
+
+        }
+
     }
 };
 
@@ -134,13 +148,21 @@ int main() {
     }
     int y = 0;
     if (y == 0) {
-       static TestStatic testStatic; // 声明该实例为static的，可以看出打印的结果为
-       // 进入到static构造中<<
+        static TestStatic testStatic; // 声明该实例为static的，可以看出打印的结果为
+        // 进入到static构造中<<
         // color1.i-> 2 color2.i-> 2
         // 进入到static析构中<<  // 说明了函数执行完之前一步是调用了该实例的析构函数。即生命周期与程序的结束同步。
     }
 
     cout << " color1.i-> " << color1.i << " color2.i-> " << color2.i << endl;
+
+    InvokeStaticFunction invokeStaticFunction;
+
+    invokeStaticFunction.printMsg(1);
+    InvokeStaticFunction::printMsg(2);
+
+
+
     // color1.i-> 2 color2.i-> 2
     return 0;
 }
