@@ -124,6 +124,19 @@ const/fast:
 .PHONY : const/fast
 
 #=============================================================================
+# Target rules for targets named static
+
+# Build rule for target.
+static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 static
+.PHONY : static
+
+# fast build rule for target.
+static/fast:
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/build
+.PHONY : static/fast
+
+#=============================================================================
 # Target rules for targets named Review
 
 # Build rule for target.
@@ -217,6 +230,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Review.dir/build.make CMakeFiles/Review.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+static/02_static.o: static/02_static.cpp.o
+
+.PHONY : static/02_static.o
+
+# target to build an object file
+static/02_static.cpp.o:
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/static/02_static.cpp.o
+.PHONY : static/02_static.cpp.o
+
+static/02_static.i: static/02_static.cpp.i
+
+.PHONY : static/02_static.i
+
+# target to preprocess a source file
+static/02_static.cpp.i:
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/static/02_static.cpp.i
+.PHONY : static/02_static.cpp.i
+
+static/02_static.s: static/02_static.cpp.s
+
+.PHONY : static/02_static.s
+
+# target to generate assembly for a file
+static/02_static.cpp.s:
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/static/02_static.cpp.s
+.PHONY : static/02_static.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -226,6 +266,7 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... const"
+	@echo "... static"
 	@echo "... Review"
 	@echo "... extern/01_const.o"
 	@echo "... extern/01_const.i"
@@ -236,6 +277,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... static/02_static.o"
+	@echo "... static/02_static.i"
+	@echo "... static/02_static.s"
 .PHONY : help
 
 

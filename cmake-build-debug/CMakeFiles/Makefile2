@@ -54,6 +54,7 @@ CMAKE_BINARY_DIR = /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug
 
 # The main recursive "all" target.
 all: CMakeFiles/const.dir/all
+all: CMakeFiles/static.dir/all
 all: CMakeFiles/Review.dir/all
 
 .PHONY : all
@@ -65,6 +66,7 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/const.dir/clean
+clean: CMakeFiles/static.dir/clean
 clean: CMakeFiles/Review.dir/clean
 
 .PHONY : clean
@@ -95,6 +97,33 @@ const: CMakeFiles/const.dir/rule
 CMakeFiles/const.dir/clean:
 	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/clean
 .PHONY : CMakeFiles/const.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/static.dir
+
+# All Build rule for target.
+CMakeFiles/static.dir/all:
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/depend
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=6,7 "Built target static"
+.PHONY : CMakeFiles/static.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/static.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/static.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/static.dir/rule
+
+# Convenience name for target.
+static: CMakeFiles/static.dir/rule
+
+.PHONY : static
+
+# clean rule for target.
+CMakeFiles/static.dir/clean:
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/clean
+.PHONY : CMakeFiles/static.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/Review.dir
