@@ -4,5 +4,6 @@
 /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/static.dir
 /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/this.dir
+/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/virtual_abstrace.dir
 /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/const.dir
 /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/Review.dir

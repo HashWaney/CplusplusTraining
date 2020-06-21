@@ -17,3 +17,5 @@ add_executable(inline
 
 add_executable(sizeof
         sizeof/05_sizeof.cpp)
+add_executable(virtual_abstrace
+        virtual_abstrace/06_single_virtual.cpp)

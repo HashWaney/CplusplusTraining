@@ -163,6 +163,19 @@ this/fast:
 .PHONY : this/fast
 
 #=============================================================================
+# Target rules for targets named virtual_abstrace
+
+# Build rule for target.
+virtual_abstrace: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 virtual_abstrace
+.PHONY : virtual_abstrace
+
+# fast build rule for target.
+virtual_abstrace/fast:
+	$(MAKE) -f CMakeFiles/virtual_abstrace.dir/build.make CMakeFiles/virtual_abstrace.dir/build
+.PHONY : virtual_abstrace/fast
+
+#=============================================================================
 # Target rules for targets named const
 
 # Build rule for target.
@@ -377,6 +390,33 @@ this/03_this.cpp.s:
 	$(MAKE) -f CMakeFiles/this.dir/build.make CMakeFiles/this.dir/this/03_this.cpp.s
 .PHONY : this/03_this.cpp.s
 
+virtual_abstrace/06_single_virtual.o: virtual_abstrace/06_single_virtual.cpp.o
+
+.PHONY : virtual_abstrace/06_single_virtual.o
+
+# target to build an object file
+virtual_abstrace/06_single_virtual.cpp.o:
+	$(MAKE) -f CMakeFiles/virtual_abstrace.dir/build.make CMakeFiles/virtual_abstrace.dir/virtual_abstrace/06_single_virtual.cpp.o
+.PHONY : virtual_abstrace/06_single_virtual.cpp.o
+
+virtual_abstrace/06_single_virtual.i: virtual_abstrace/06_single_virtual.cpp.i
+
+.PHONY : virtual_abstrace/06_single_virtual.i
+
+# target to preprocess a source file
+virtual_abstrace/06_single_virtual.cpp.i:
+	$(MAKE) -f CMakeFiles/virtual_abstrace.dir/build.make CMakeFiles/virtual_abstrace.dir/virtual_abstrace/06_single_virtual.cpp.i
+.PHONY : virtual_abstrace/06_single_virtual.cpp.i
+
+virtual_abstrace/06_single_virtual.s: virtual_abstrace/06_single_virtual.cpp.s
+
+.PHONY : virtual_abstrace/06_single_virtual.s
+
+# target to generate assembly for a file
+virtual_abstrace/06_single_virtual.cpp.s:
+	$(MAKE) -f CMakeFiles/virtual_abstrace.dir/build.make CMakeFiles/virtual_abstrace.dir/virtual_abstrace/06_single_virtual.cpp.s
+.PHONY : virtual_abstrace/06_single_virtual.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -389,6 +429,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... static"
 	@echo "... this"
+	@echo "... virtual_abstrace"
 	@echo "... const"
 	@echo "... Review"
 	@echo "... const/01_const.o"
@@ -412,6 +453,9 @@ help:
 	@echo "... this/03_this.o"
 	@echo "... this/03_this.i"
 	@echo "... this/03_this.s"
+	@echo "... virtual_abstrace/06_single_virtual.o"
+	@echo "... virtual_abstrace/06_single_virtual.i"
+	@echo "... virtual_abstrace/06_single_virtual.s"
 .PHONY : help
 
 

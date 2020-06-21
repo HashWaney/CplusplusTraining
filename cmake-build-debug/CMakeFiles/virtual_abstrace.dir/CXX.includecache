@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wangqing/Desktop/JNI/CPP/Review/virtual_abstrace/06_single_virtual.cpp
+iostream
+/Users/wangqing/Desktop/JNI/CPP/Review/virtual_abstrace/iostream
+
