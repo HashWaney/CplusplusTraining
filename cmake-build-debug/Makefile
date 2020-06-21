@@ -163,6 +163,19 @@ this/fast:
 .PHONY : this/fast
 
 #=============================================================================
+# Target rules for targets named virtual_impl
+
+# Build rule for target.
+virtual_impl: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 virtual_impl
+.PHONY : virtual_impl
+
+# fast build rule for target.
+virtual_impl/fast:
+	$(MAKE) -f CMakeFiles/virtual_impl.dir/build.make CMakeFiles/virtual_impl.dir/build
+.PHONY : virtual_impl/fast
+
+#=============================================================================
 # Target rules for targets named virtual_abstrace
 
 # Build rule for target.
@@ -390,6 +403,33 @@ this/03_this.cpp.s:
 	$(MAKE) -f CMakeFiles/this.dir/build.make CMakeFiles/this.dir/this/03_this.cpp.s
 .PHONY : this/03_this.cpp.s
 
+virtual_abstrace/06_impl_abstract.o: virtual_abstrace/06_impl_abstract.cpp.o
+
+.PHONY : virtual_abstrace/06_impl_abstract.o
+
+# target to build an object file
+virtual_abstrace/06_impl_abstract.cpp.o:
+	$(MAKE) -f CMakeFiles/virtual_impl.dir/build.make CMakeFiles/virtual_impl.dir/virtual_abstrace/06_impl_abstract.cpp.o
+.PHONY : virtual_abstrace/06_impl_abstract.cpp.o
+
+virtual_abstrace/06_impl_abstract.i: virtual_abstrace/06_impl_abstract.cpp.i
+
+.PHONY : virtual_abstrace/06_impl_abstract.i
+
+# target to preprocess a source file
+virtual_abstrace/06_impl_abstract.cpp.i:
+	$(MAKE) -f CMakeFiles/virtual_impl.dir/build.make CMakeFiles/virtual_impl.dir/virtual_abstrace/06_impl_abstract.cpp.i
+.PHONY : virtual_abstrace/06_impl_abstract.cpp.i
+
+virtual_abstrace/06_impl_abstract.s: virtual_abstrace/06_impl_abstract.cpp.s
+
+.PHONY : virtual_abstrace/06_impl_abstract.s
+
+# target to generate assembly for a file
+virtual_abstrace/06_impl_abstract.cpp.s:
+	$(MAKE) -f CMakeFiles/virtual_impl.dir/build.make CMakeFiles/virtual_impl.dir/virtual_abstrace/06_impl_abstract.cpp.s
+.PHONY : virtual_abstrace/06_impl_abstract.cpp.s
+
 virtual_abstrace/06_single_virtual.o: virtual_abstrace/06_single_virtual.cpp.o
 
 .PHONY : virtual_abstrace/06_single_virtual.o
@@ -429,6 +469,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... static"
 	@echo "... this"
+	@echo "... virtual_impl"
 	@echo "... virtual_abstrace"
 	@echo "... const"
 	@echo "... Review"
@@ -453,6 +494,9 @@ help:
 	@echo "... this/03_this.o"
 	@echo "... this/03_this.i"
 	@echo "... this/03_this.s"
+	@echo "... virtual_abstrace/06_impl_abstract.o"
+	@echo "... virtual_abstrace/06_impl_abstract.i"
+	@echo "... virtual_abstrace/06_impl_abstract.s"
 	@echo "... virtual_abstrace/06_single_virtual.o"
 	@echo "... virtual_abstrace/06_single_virtual.i"
 	@echo "... virtual_abstrace/06_single_virtual.s"
