@@ -21,3 +21,5 @@ add_executable(virtual_abstrace
         virtual_abstrace/06_single_virtual.cpp
        )
 add_executable(virtual_impl  virtual_abstrace/06_impl_abstract.cpp)
+
+add_executable(virtual_become_abstract virtual_abstrace/06_virtual_become_abstract.cpp)

@@ -163,6 +163,19 @@ this/fast:
 .PHONY : this/fast
 
 #=============================================================================
+# Target rules for targets named virtual_become_abstract
+
+# Build rule for target.
+virtual_become_abstract: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 virtual_become_abstract
+.PHONY : virtual_become_abstract
+
+# fast build rule for target.
+virtual_become_abstract/fast:
+	$(MAKE) -f CMakeFiles/virtual_become_abstract.dir/build.make CMakeFiles/virtual_become_abstract.dir/build
+.PHONY : virtual_become_abstract/fast
+
+#=============================================================================
 # Target rules for targets named virtual_impl
 
 # Build rule for target.
@@ -457,6 +470,33 @@ virtual_abstrace/06_single_virtual.cpp.s:
 	$(MAKE) -f CMakeFiles/virtual_abstrace.dir/build.make CMakeFiles/virtual_abstrace.dir/virtual_abstrace/06_single_virtual.cpp.s
 .PHONY : virtual_abstrace/06_single_virtual.cpp.s
 
+virtual_abstrace/06_virtual_become_abstract.o: virtual_abstrace/06_virtual_become_abstract.cpp.o
+
+.PHONY : virtual_abstrace/06_virtual_become_abstract.o
+
+# target to build an object file
+virtual_abstrace/06_virtual_become_abstract.cpp.o:
+	$(MAKE) -f CMakeFiles/virtual_become_abstract.dir/build.make CMakeFiles/virtual_become_abstract.dir/virtual_abstrace/06_virtual_become_abstract.cpp.o
+.PHONY : virtual_abstrace/06_virtual_become_abstract.cpp.o
+
+virtual_abstrace/06_virtual_become_abstract.i: virtual_abstrace/06_virtual_become_abstract.cpp.i
+
+.PHONY : virtual_abstrace/06_virtual_become_abstract.i
+
+# target to preprocess a source file
+virtual_abstrace/06_virtual_become_abstract.cpp.i:
+	$(MAKE) -f CMakeFiles/virtual_become_abstract.dir/build.make CMakeFiles/virtual_become_abstract.dir/virtual_abstrace/06_virtual_become_abstract.cpp.i
+.PHONY : virtual_abstrace/06_virtual_become_abstract.cpp.i
+
+virtual_abstrace/06_virtual_become_abstract.s: virtual_abstrace/06_virtual_become_abstract.cpp.s
+
+.PHONY : virtual_abstrace/06_virtual_become_abstract.s
+
+# target to generate assembly for a file
+virtual_abstrace/06_virtual_become_abstract.cpp.s:
+	$(MAKE) -f CMakeFiles/virtual_become_abstract.dir/build.make CMakeFiles/virtual_become_abstract.dir/virtual_abstrace/06_virtual_become_abstract.cpp.s
+.PHONY : virtual_abstrace/06_virtual_become_abstract.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -469,6 +509,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... static"
 	@echo "... this"
+	@echo "... virtual_become_abstract"
 	@echo "... virtual_impl"
 	@echo "... virtual_abstrace"
 	@echo "... const"
@@ -500,6 +541,9 @@ help:
 	@echo "... virtual_abstrace/06_single_virtual.o"
 	@echo "... virtual_abstrace/06_single_virtual.i"
 	@echo "... virtual_abstrace/06_single_virtual.s"
+	@echo "... virtual_abstrace/06_virtual_become_abstract.o"
+	@echo "... virtual_abstrace/06_virtual_become_abstract.i"
+	@echo "... virtual_abstrace/06_virtual_become_abstract.s"
 .PHONY : help
 
 

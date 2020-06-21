@@ -57,6 +57,7 @@ all: CMakeFiles/sizeof.dir/all
 all: CMakeFiles/inline.dir/all
 all: CMakeFiles/static.dir/all
 all: CMakeFiles/this.dir/all
+all: CMakeFiles/virtual_become_abstract.dir/all
 all: CMakeFiles/virtual_impl.dir/all
 all: CMakeFiles/virtual_abstrace.dir/all
 all: CMakeFiles/const.dir/all
@@ -74,6 +75,7 @@ clean: CMakeFiles/sizeof.dir/clean
 clean: CMakeFiles/inline.dir/clean
 clean: CMakeFiles/static.dir/clean
 clean: CMakeFiles/this.dir/clean
+clean: CMakeFiles/virtual_become_abstract.dir/clean
 clean: CMakeFiles/virtual_impl.dir/clean
 clean: CMakeFiles/virtual_abstrace.dir/clean
 clean: CMakeFiles/const.dir/clean
@@ -190,13 +192,40 @@ CMakeFiles/this.dir/clean:
 .PHONY : CMakeFiles/this.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/virtual_become_abstract.dir
+
+# All Build rule for target.
+CMakeFiles/virtual_become_abstract.dir/all:
+	$(MAKE) -f CMakeFiles/virtual_become_abstract.dir/build.make CMakeFiles/virtual_become_abstract.dir/depend
+	$(MAKE) -f CMakeFiles/virtual_become_abstract.dir/build.make CMakeFiles/virtual_become_abstract.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=16,17 "Built target virtual_become_abstract"
+.PHONY : CMakeFiles/virtual_become_abstract.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/virtual_become_abstract.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/virtual_become_abstract.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/virtual_become_abstract.dir/rule
+
+# Convenience name for target.
+virtual_become_abstract: CMakeFiles/virtual_become_abstract.dir/rule
+
+.PHONY : virtual_become_abstract
+
+# clean rule for target.
+CMakeFiles/virtual_become_abstract.dir/clean:
+	$(MAKE) -f CMakeFiles/virtual_become_abstract.dir/build.make CMakeFiles/virtual_become_abstract.dir/clean
+.PHONY : CMakeFiles/virtual_become_abstract.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/virtual_impl.dir
 
 # All Build rule for target.
 CMakeFiles/virtual_impl.dir/all:
 	$(MAKE) -f CMakeFiles/virtual_impl.dir/build.make CMakeFiles/virtual_impl.dir/depend
 	$(MAKE) -f CMakeFiles/virtual_impl.dir/build.make CMakeFiles/virtual_impl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=16,17 "Built target virtual_impl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=18,19 "Built target virtual_impl"
 .PHONY : CMakeFiles/virtual_impl.dir/all
 
 # Build rule for subdir invocation for target.

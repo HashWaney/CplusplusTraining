@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/virtual_become_abstract.dir/virtual_abstrace/06_virtual_become_abstract.cpp.o  -o virtual_become_abstract 
