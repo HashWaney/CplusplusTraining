@@ -14,3 +14,6 @@ add_executable(this
 
 add_executable(inline
         inline/04_inline.cpp)
+
+add_executable(sizeof
+        sizeof/05_sizeof.cpp)

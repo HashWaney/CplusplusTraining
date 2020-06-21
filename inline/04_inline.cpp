@@ -74,7 +74,6 @@ public:
         cout << " i am virtual sample class \n";
     }
 
-
 };
 
 
@@ -110,7 +109,5 @@ int main() {
     // VirtualBase有析构函数，所以delete时，会先调用派生类（VirtualSample）的析构函数，在调用基类的析构函数，防止内存泄漏
     delete p;
     p = nullptr;
-
-
     return 0;
 }

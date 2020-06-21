@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named sizeof
+
+# Build rule for target.
+sizeof: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sizeof
+.PHONY : sizeof
+
+# fast build rule for target.
+sizeof/fast:
+	$(MAKE) -f CMakeFiles/sizeof.dir/build.make CMakeFiles/sizeof.dir/build
+.PHONY : sizeof/fast
+
+#=============================================================================
 # Target rules for targets named inline
 
 # Build rule for target.
@@ -283,6 +296,33 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Review.dir/build.make CMakeFiles/Review.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+sizeof/05_sizeof.o: sizeof/05_sizeof.cpp.o
+
+.PHONY : sizeof/05_sizeof.o
+
+# target to build an object file
+sizeof/05_sizeof.cpp.o:
+	$(MAKE) -f CMakeFiles/sizeof.dir/build.make CMakeFiles/sizeof.dir/sizeof/05_sizeof.cpp.o
+.PHONY : sizeof/05_sizeof.cpp.o
+
+sizeof/05_sizeof.i: sizeof/05_sizeof.cpp.i
+
+.PHONY : sizeof/05_sizeof.i
+
+# target to preprocess a source file
+sizeof/05_sizeof.cpp.i:
+	$(MAKE) -f CMakeFiles/sizeof.dir/build.make CMakeFiles/sizeof.dir/sizeof/05_sizeof.cpp.i
+.PHONY : sizeof/05_sizeof.cpp.i
+
+sizeof/05_sizeof.s: sizeof/05_sizeof.cpp.s
+
+.PHONY : sizeof/05_sizeof.s
+
+# target to generate assembly for a file
+sizeof/05_sizeof.cpp.s:
+	$(MAKE) -f CMakeFiles/sizeof.dir/build.make CMakeFiles/sizeof.dir/sizeof/05_sizeof.cpp.s
+.PHONY : sizeof/05_sizeof.cpp.s
+
 static/02_static.o: static/02_static.cpp.o
 
 .PHONY : static/02_static.o
@@ -344,6 +384,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... sizeof"
 	@echo "... inline"
 	@echo "... edit_cache"
 	@echo "... static"
@@ -362,6 +403,9 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... sizeof/05_sizeof.o"
+	@echo "... sizeof/05_sizeof.i"
+	@echo "... sizeof/05_sizeof.s"
 	@echo "... static/02_static.o"
 	@echo "... static/02_static.i"
 	@echo "... static/02_static.s"

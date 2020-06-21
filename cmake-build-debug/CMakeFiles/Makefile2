@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/sizeof.dir/all
 all: CMakeFiles/inline.dir/all
 all: CMakeFiles/static.dir/all
 all: CMakeFiles/this.dir/all
@@ -67,6 +68,7 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/sizeof.dir/clean
 clean: CMakeFiles/inline.dir/clean
 clean: CMakeFiles/static.dir/clean
 clean: CMakeFiles/this.dir/clean
@@ -74,6 +76,33 @@ clean: CMakeFiles/const.dir/clean
 clean: CMakeFiles/Review.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/sizeof.dir
+
+# All Build rule for target.
+CMakeFiles/sizeof.dir/all:
+	$(MAKE) -f CMakeFiles/sizeof.dir/build.make CMakeFiles/sizeof.dir/depend
+	$(MAKE) -f CMakeFiles/sizeof.dir/build.make CMakeFiles/sizeof.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target sizeof"
+.PHONY : CMakeFiles/sizeof.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/sizeof.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/sizeof.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/sizeof.dir/rule
+
+# Convenience name for target.
+sizeof: CMakeFiles/sizeof.dir/rule
+
+.PHONY : sizeof
+
+# clean rule for target.
+CMakeFiles/sizeof.dir/clean:
+	$(MAKE) -f CMakeFiles/sizeof.dir/build.make CMakeFiles/sizeof.dir/clean
+.PHONY : CMakeFiles/sizeof.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/inline.dir
@@ -109,7 +138,7 @@ CMakeFiles/inline.dir/clean:
 CMakeFiles/static.dir/all:
 	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/depend
 	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=8,9 "Built target static"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target static"
 .PHONY : CMakeFiles/static.dir/all
 
 # Build rule for subdir invocation for target.
@@ -136,7 +165,7 @@ CMakeFiles/static.dir/clean:
 CMakeFiles/this.dir/all:
 	$(MAKE) -f CMakeFiles/this.dir/build.make CMakeFiles/this.dir/depend
 	$(MAKE) -f CMakeFiles/this.dir/build.make CMakeFiles/this.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=10,11 "Built target this"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=12,13 "Built target this"
 .PHONY : CMakeFiles/this.dir/all
 
 # Build rule for subdir invocation for target.

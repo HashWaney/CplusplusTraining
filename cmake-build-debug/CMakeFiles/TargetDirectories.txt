@@ -1,4 +1,5 @@
 /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/sizeof.dir
 /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/inline.dir
 /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/edit_cache.dir
 /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/static.dir
