@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wangqing/Desktop/JNI/CPP/Review/assert/11_assert.cpp
+stdio.h
+/Users/wangqing/Desktop/JNI/CPP/Review/assert/stdio.h
+assert.h
+/Users/wangqing/Desktop/JNI/CPP/Review/assert/assert.h
+

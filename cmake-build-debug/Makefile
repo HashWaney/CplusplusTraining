@@ -111,43 +111,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named static
+# Target rules for targets named assert
 
 # Build rule for target.
-static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 static
-.PHONY : static
+assert: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 assert
+.PHONY : assert
 
 # fast build rule for target.
-static/fast:
-	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/build
-.PHONY : static/fast
-
-#=============================================================================
-# Target rules for targets named vptr_vtable
-
-# Build rule for target.
-vptr_vtable: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 vptr_vtable
-.PHONY : vptr_vtable
-
-# fast build rule for target.
-vptr_vtable/fast:
-	$(MAKE) -f CMakeFiles/vptr_vtable.dir/build.make CMakeFiles/vptr_vtable.dir/build
-.PHONY : vptr_vtable/fast
-
-#=============================================================================
-# Target rules for targets named sizeof
-
-# Build rule for target.
-sizeof: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 sizeof
-.PHONY : sizeof
-
-# fast build rule for target.
-sizeof/fast:
-	$(MAKE) -f CMakeFiles/sizeof.dir/build.make CMakeFiles/sizeof.dir/build
-.PHONY : sizeof/fast
+assert/fast:
+	$(MAKE) -f CMakeFiles/assert.dir/build.make CMakeFiles/assert.dir/build
+.PHONY : assert/fast
 
 #=============================================================================
 # Target rules for targets named virtual_become_abstract
@@ -176,17 +150,56 @@ inline/fast:
 .PHONY : inline/fast
 
 #=============================================================================
-# Target rules for targets named Review
+# Target rules for targets named virtual
 
 # Build rule for target.
-Review: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Review
-.PHONY : Review
+virtual: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 virtual
+.PHONY : virtual
 
 # fast build rule for target.
-Review/fast:
-	$(MAKE) -f CMakeFiles/Review.dir/build.make CMakeFiles/Review.dir/build
-.PHONY : Review/fast
+virtual/fast:
+	$(MAKE) -f CMakeFiles/virtual.dir/build.make CMakeFiles/virtual.dir/build
+.PHONY : virtual/fast
+
+#=============================================================================
+# Target rules for targets named sizeof
+
+# Build rule for target.
+sizeof: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 sizeof
+.PHONY : sizeof
+
+# fast build rule for target.
+sizeof/fast:
+	$(MAKE) -f CMakeFiles/sizeof.dir/build.make CMakeFiles/sizeof.dir/build
+.PHONY : sizeof/fast
+
+#=============================================================================
+# Target rules for targets named vptr_vtable
+
+# Build rule for target.
+vptr_vtable: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vptr_vtable
+.PHONY : vptr_vtable
+
+# fast build rule for target.
+vptr_vtable/fast:
+	$(MAKE) -f CMakeFiles/vptr_vtable.dir/build.make CMakeFiles/vptr_vtable.dir/build
+.PHONY : vptr_vtable/fast
+
+#=============================================================================
+# Target rules for targets named static
+
+# Build rule for target.
+static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 static
+.PHONY : static
+
+# fast build rule for target.
+static/fast:
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/build
+.PHONY : static/fast
 
 #=============================================================================
 # Target rules for targets named this
@@ -215,17 +228,43 @@ virtual_impl/fast:
 .PHONY : virtual_impl/fast
 
 #=============================================================================
-# Target rules for targets named virtual_abstrace
+# Target rules for targets named volatile
 
 # Build rule for target.
-virtual_abstrace: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 virtual_abstrace
-.PHONY : virtual_abstrace
+volatile: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 volatile
+.PHONY : volatile
 
 # fast build rule for target.
-virtual_abstrace/fast:
-	$(MAKE) -f CMakeFiles/virtual_abstrace.dir/build.make CMakeFiles/virtual_abstrace.dir/build
-.PHONY : virtual_abstrace/fast
+volatile/fast:
+	$(MAKE) -f CMakeFiles/volatile.dir/build.make CMakeFiles/volatile.dir/build
+.PHONY : volatile/fast
+
+#=============================================================================
+# Target rules for targets named cast
+
+# Build rule for target.
+cast: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cast
+.PHONY : cast
+
+# fast build rule for target.
+cast/fast:
+	$(MAKE) -f CMakeFiles/cast.dir/build.make CMakeFiles/cast.dir/build
+.PHONY : cast/fast
+
+#=============================================================================
+# Target rules for targets named pure_abstrace
+
+# Build rule for target.
+pure_abstrace: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pure_abstrace
+.PHONY : pure_abstrace
+
+# fast build rule for target.
+pure_abstrace/fast:
+	$(MAKE) -f CMakeFiles/pure_abstrace.dir/build.make CMakeFiles/pure_abstrace.dir/build
+.PHONY : pure_abstrace/fast
 
 #=============================================================================
 # Target rules for targets named const
@@ -239,6 +278,46 @@ const: cmake_check_build_system
 const/fast:
 	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/build
 .PHONY : const/fast
+
+#=============================================================================
+# Target rules for targets named Review
+
+# Build rule for target.
+Review: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Review
+.PHONY : Review
+
+# fast build rule for target.
+Review/fast:
+	$(MAKE) -f CMakeFiles/Review.dir/build.make CMakeFiles/Review.dir/build
+.PHONY : Review/fast
+
+assert/11_assert.o: assert/11_assert.cpp.o
+
+.PHONY : assert/11_assert.o
+
+# target to build an object file
+assert/11_assert.cpp.o:
+	$(MAKE) -f CMakeFiles/assert.dir/build.make CMakeFiles/assert.dir/assert/11_assert.cpp.o
+.PHONY : assert/11_assert.cpp.o
+
+assert/11_assert.i: assert/11_assert.cpp.i
+
+.PHONY : assert/11_assert.i
+
+# target to preprocess a source file
+assert/11_assert.cpp.i:
+	$(MAKE) -f CMakeFiles/assert.dir/build.make CMakeFiles/assert.dir/assert/11_assert.cpp.i
+.PHONY : assert/11_assert.cpp.i
+
+assert/11_assert.s: assert/11_assert.cpp.s
+
+.PHONY : assert/11_assert.s
+
+# target to generate assembly for a file
+assert/11_assert.cpp.s:
+	$(MAKE) -f CMakeFiles/assert.dir/build.make CMakeFiles/assert.dir/assert/11_assert.cpp.s
+.PHONY : assert/11_assert.cpp.s
 
 const/01_const.o: const/01_const.cpp.o
 
@@ -348,6 +427,87 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/Review.dir/build.make CMakeFiles/Review.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+pure_abstrace/06_impl_abstract.o: pure_abstrace/06_impl_abstract.cpp.o
+
+.PHONY : pure_abstrace/06_impl_abstract.o
+
+# target to build an object file
+pure_abstrace/06_impl_abstract.cpp.o:
+	$(MAKE) -f CMakeFiles/virtual_impl.dir/build.make CMakeFiles/virtual_impl.dir/pure_abstrace/06_impl_abstract.cpp.o
+.PHONY : pure_abstrace/06_impl_abstract.cpp.o
+
+pure_abstrace/06_impl_abstract.i: pure_abstrace/06_impl_abstract.cpp.i
+
+.PHONY : pure_abstrace/06_impl_abstract.i
+
+# target to preprocess a source file
+pure_abstrace/06_impl_abstract.cpp.i:
+	$(MAKE) -f CMakeFiles/virtual_impl.dir/build.make CMakeFiles/virtual_impl.dir/pure_abstrace/06_impl_abstract.cpp.i
+.PHONY : pure_abstrace/06_impl_abstract.cpp.i
+
+pure_abstrace/06_impl_abstract.s: pure_abstrace/06_impl_abstract.cpp.s
+
+.PHONY : pure_abstrace/06_impl_abstract.s
+
+# target to generate assembly for a file
+pure_abstrace/06_impl_abstract.cpp.s:
+	$(MAKE) -f CMakeFiles/virtual_impl.dir/build.make CMakeFiles/virtual_impl.dir/pure_abstrace/06_impl_abstract.cpp.s
+.PHONY : pure_abstrace/06_impl_abstract.cpp.s
+
+pure_abstrace/06_single_virtual.o: pure_abstrace/06_single_virtual.cpp.o
+
+.PHONY : pure_abstrace/06_single_virtual.o
+
+# target to build an object file
+pure_abstrace/06_single_virtual.cpp.o:
+	$(MAKE) -f CMakeFiles/pure_abstrace.dir/build.make CMakeFiles/pure_abstrace.dir/pure_abstrace/06_single_virtual.cpp.o
+.PHONY : pure_abstrace/06_single_virtual.cpp.o
+
+pure_abstrace/06_single_virtual.i: pure_abstrace/06_single_virtual.cpp.i
+
+.PHONY : pure_abstrace/06_single_virtual.i
+
+# target to preprocess a source file
+pure_abstrace/06_single_virtual.cpp.i:
+	$(MAKE) -f CMakeFiles/pure_abstrace.dir/build.make CMakeFiles/pure_abstrace.dir/pure_abstrace/06_single_virtual.cpp.i
+.PHONY : pure_abstrace/06_single_virtual.cpp.i
+
+pure_abstrace/06_single_virtual.s: pure_abstrace/06_single_virtual.cpp.s
+
+.PHONY : pure_abstrace/06_single_virtual.s
+
+# target to generate assembly for a file
+pure_abstrace/06_single_virtual.cpp.s:
+	$(MAKE) -f CMakeFiles/pure_abstrace.dir/build.make CMakeFiles/pure_abstrace.dir/pure_abstrace/06_single_virtual.cpp.s
+.PHONY : pure_abstrace/06_single_virtual.cpp.s
+
+pure_abstrace/06_virtual_become_abstract.o: pure_abstrace/06_virtual_become_abstract.cpp.o
+
+.PHONY : pure_abstrace/06_virtual_become_abstract.o
+
+# target to build an object file
+pure_abstrace/06_virtual_become_abstract.cpp.o:
+	$(MAKE) -f CMakeFiles/virtual_become_abstract.dir/build.make CMakeFiles/virtual_become_abstract.dir/pure_abstrace/06_virtual_become_abstract.cpp.o
+.PHONY : pure_abstrace/06_virtual_become_abstract.cpp.o
+
+pure_abstrace/06_virtual_become_abstract.i: pure_abstrace/06_virtual_become_abstract.cpp.i
+
+.PHONY : pure_abstrace/06_virtual_become_abstract.i
+
+# target to preprocess a source file
+pure_abstrace/06_virtual_become_abstract.cpp.i:
+	$(MAKE) -f CMakeFiles/virtual_become_abstract.dir/build.make CMakeFiles/virtual_become_abstract.dir/pure_abstrace/06_virtual_become_abstract.cpp.i
+.PHONY : pure_abstrace/06_virtual_become_abstract.cpp.i
+
+pure_abstrace/06_virtual_become_abstract.s: pure_abstrace/06_virtual_become_abstract.cpp.s
+
+.PHONY : pure_abstrace/06_virtual_become_abstract.s
+
+# target to generate assembly for a file
+pure_abstrace/06_virtual_become_abstract.cpp.s:
+	$(MAKE) -f CMakeFiles/virtual_become_abstract.dir/build.make CMakeFiles/virtual_become_abstract.dir/pure_abstrace/06_virtual_become_abstract.cpp.s
+.PHONY : pure_abstrace/06_virtual_become_abstract.cpp.s
+
 sizeof/05_sizeof.o: sizeof/05_sizeof.cpp.o
 
 .PHONY : sizeof/05_sizeof.o
@@ -429,113 +589,113 @@ this/03_this.cpp.s:
 	$(MAKE) -f CMakeFiles/this.dir/build.make CMakeFiles/this.dir/this/03_this.cpp.s
 .PHONY : this/03_this.cpp.s
 
-virtual_abstrace/06_impl_abstract.o: virtual_abstrace/06_impl_abstract.cpp.o
+typecast/09_type_cast.o: typecast/09_type_cast.cpp.o
 
-.PHONY : virtual_abstrace/06_impl_abstract.o
-
-# target to build an object file
-virtual_abstrace/06_impl_abstract.cpp.o:
-	$(MAKE) -f CMakeFiles/virtual_impl.dir/build.make CMakeFiles/virtual_impl.dir/virtual_abstrace/06_impl_abstract.cpp.o
-.PHONY : virtual_abstrace/06_impl_abstract.cpp.o
-
-virtual_abstrace/06_impl_abstract.i: virtual_abstrace/06_impl_abstract.cpp.i
-
-.PHONY : virtual_abstrace/06_impl_abstract.i
-
-# target to preprocess a source file
-virtual_abstrace/06_impl_abstract.cpp.i:
-	$(MAKE) -f CMakeFiles/virtual_impl.dir/build.make CMakeFiles/virtual_impl.dir/virtual_abstrace/06_impl_abstract.cpp.i
-.PHONY : virtual_abstrace/06_impl_abstract.cpp.i
-
-virtual_abstrace/06_impl_abstract.s: virtual_abstrace/06_impl_abstract.cpp.s
-
-.PHONY : virtual_abstrace/06_impl_abstract.s
-
-# target to generate assembly for a file
-virtual_abstrace/06_impl_abstract.cpp.s:
-	$(MAKE) -f CMakeFiles/virtual_impl.dir/build.make CMakeFiles/virtual_impl.dir/virtual_abstrace/06_impl_abstract.cpp.s
-.PHONY : virtual_abstrace/06_impl_abstract.cpp.s
-
-virtual_abstrace/06_single_virtual.o: virtual_abstrace/06_single_virtual.cpp.o
-
-.PHONY : virtual_abstrace/06_single_virtual.o
+.PHONY : typecast/09_type_cast.o
 
 # target to build an object file
-virtual_abstrace/06_single_virtual.cpp.o:
-	$(MAKE) -f CMakeFiles/virtual_abstrace.dir/build.make CMakeFiles/virtual_abstrace.dir/virtual_abstrace/06_single_virtual.cpp.o
-.PHONY : virtual_abstrace/06_single_virtual.cpp.o
+typecast/09_type_cast.cpp.o:
+	$(MAKE) -f CMakeFiles/cast.dir/build.make CMakeFiles/cast.dir/typecast/09_type_cast.cpp.o
+.PHONY : typecast/09_type_cast.cpp.o
 
-virtual_abstrace/06_single_virtual.i: virtual_abstrace/06_single_virtual.cpp.i
+typecast/09_type_cast.i: typecast/09_type_cast.cpp.i
 
-.PHONY : virtual_abstrace/06_single_virtual.i
+.PHONY : typecast/09_type_cast.i
 
 # target to preprocess a source file
-virtual_abstrace/06_single_virtual.cpp.i:
-	$(MAKE) -f CMakeFiles/virtual_abstrace.dir/build.make CMakeFiles/virtual_abstrace.dir/virtual_abstrace/06_single_virtual.cpp.i
-.PHONY : virtual_abstrace/06_single_virtual.cpp.i
+typecast/09_type_cast.cpp.i:
+	$(MAKE) -f CMakeFiles/cast.dir/build.make CMakeFiles/cast.dir/typecast/09_type_cast.cpp.i
+.PHONY : typecast/09_type_cast.cpp.i
 
-virtual_abstrace/06_single_virtual.s: virtual_abstrace/06_single_virtual.cpp.s
+typecast/09_type_cast.s: typecast/09_type_cast.cpp.s
 
-.PHONY : virtual_abstrace/06_single_virtual.s
+.PHONY : typecast/09_type_cast.s
 
 # target to generate assembly for a file
-virtual_abstrace/06_single_virtual.cpp.s:
-	$(MAKE) -f CMakeFiles/virtual_abstrace.dir/build.make CMakeFiles/virtual_abstrace.dir/virtual_abstrace/06_single_virtual.cpp.s
-.PHONY : virtual_abstrace/06_single_virtual.cpp.s
+typecast/09_type_cast.cpp.s:
+	$(MAKE) -f CMakeFiles/cast.dir/build.make CMakeFiles/cast.dir/typecast/09_type_cast.cpp.s
+.PHONY : typecast/09_type_cast.cpp.s
 
-virtual_abstrace/06_virtual_become_abstract.o: virtual_abstrace/06_virtual_become_abstract.cpp.o
+virtual/08_virtual.o: virtual/08_virtual.cpp.o
 
-.PHONY : virtual_abstrace/06_virtual_become_abstract.o
+.PHONY : virtual/08_virtual.o
 
 # target to build an object file
-virtual_abstrace/06_virtual_become_abstract.cpp.o:
-	$(MAKE) -f CMakeFiles/virtual_become_abstract.dir/build.make CMakeFiles/virtual_become_abstract.dir/virtual_abstrace/06_virtual_become_abstract.cpp.o
-.PHONY : virtual_abstrace/06_virtual_become_abstract.cpp.o
+virtual/08_virtual.cpp.o:
+	$(MAKE) -f CMakeFiles/virtual.dir/build.make CMakeFiles/virtual.dir/virtual/08_virtual.cpp.o
+.PHONY : virtual/08_virtual.cpp.o
 
-virtual_abstrace/06_virtual_become_abstract.i: virtual_abstrace/06_virtual_become_abstract.cpp.i
+virtual/08_virtual.i: virtual/08_virtual.cpp.i
 
-.PHONY : virtual_abstrace/06_virtual_become_abstract.i
+.PHONY : virtual/08_virtual.i
 
 # target to preprocess a source file
-virtual_abstrace/06_virtual_become_abstract.cpp.i:
-	$(MAKE) -f CMakeFiles/virtual_become_abstract.dir/build.make CMakeFiles/virtual_become_abstract.dir/virtual_abstrace/06_virtual_become_abstract.cpp.i
-.PHONY : virtual_abstrace/06_virtual_become_abstract.cpp.i
+virtual/08_virtual.cpp.i:
+	$(MAKE) -f CMakeFiles/virtual.dir/build.make CMakeFiles/virtual.dir/virtual/08_virtual.cpp.i
+.PHONY : virtual/08_virtual.cpp.i
 
-virtual_abstrace/06_virtual_become_abstract.s: virtual_abstrace/06_virtual_become_abstract.cpp.s
+virtual/08_virtual.s: virtual/08_virtual.cpp.s
 
-.PHONY : virtual_abstrace/06_virtual_become_abstract.s
+.PHONY : virtual/08_virtual.s
 
 # target to generate assembly for a file
-virtual_abstrace/06_virtual_become_abstract.cpp.s:
-	$(MAKE) -f CMakeFiles/virtual_become_abstract.dir/build.make CMakeFiles/virtual_become_abstract.dir/virtual_abstrace/06_virtual_become_abstract.cpp.s
-.PHONY : virtual_abstrace/06_virtual_become_abstract.cpp.s
+virtual/08_virtual.cpp.s:
+	$(MAKE) -f CMakeFiles/virtual.dir/build.make CMakeFiles/virtual.dir/virtual/08_virtual.cpp.s
+.PHONY : virtual/08_virtual.cpp.s
 
-vptr_vtable/vtable.o: vptr_vtable/vtable.cpp.o
+volatile/10_volatile.o: volatile/10_volatile.cpp.o
 
-.PHONY : vptr_vtable/vtable.o
+.PHONY : volatile/10_volatile.o
 
 # target to build an object file
-vptr_vtable/vtable.cpp.o:
-	$(MAKE) -f CMakeFiles/vptr_vtable.dir/build.make CMakeFiles/vptr_vtable.dir/vptr_vtable/vtable.cpp.o
-.PHONY : vptr_vtable/vtable.cpp.o
+volatile/10_volatile.cpp.o:
+	$(MAKE) -f CMakeFiles/volatile.dir/build.make CMakeFiles/volatile.dir/volatile/10_volatile.cpp.o
+.PHONY : volatile/10_volatile.cpp.o
 
-vptr_vtable/vtable.i: vptr_vtable/vtable.cpp.i
+volatile/10_volatile.i: volatile/10_volatile.cpp.i
 
-.PHONY : vptr_vtable/vtable.i
+.PHONY : volatile/10_volatile.i
 
 # target to preprocess a source file
-vptr_vtable/vtable.cpp.i:
-	$(MAKE) -f CMakeFiles/vptr_vtable.dir/build.make CMakeFiles/vptr_vtable.dir/vptr_vtable/vtable.cpp.i
-.PHONY : vptr_vtable/vtable.cpp.i
+volatile/10_volatile.cpp.i:
+	$(MAKE) -f CMakeFiles/volatile.dir/build.make CMakeFiles/volatile.dir/volatile/10_volatile.cpp.i
+.PHONY : volatile/10_volatile.cpp.i
 
-vptr_vtable/vtable.s: vptr_vtable/vtable.cpp.s
+volatile/10_volatile.s: volatile/10_volatile.cpp.s
 
-.PHONY : vptr_vtable/vtable.s
+.PHONY : volatile/10_volatile.s
 
 # target to generate assembly for a file
-vptr_vtable/vtable.cpp.s:
-	$(MAKE) -f CMakeFiles/vptr_vtable.dir/build.make CMakeFiles/vptr_vtable.dir/vptr_vtable/vtable.cpp.s
-.PHONY : vptr_vtable/vtable.cpp.s
+volatile/10_volatile.cpp.s:
+	$(MAKE) -f CMakeFiles/volatile.dir/build.make CMakeFiles/volatile.dir/volatile/10_volatile.cpp.s
+.PHONY : volatile/10_volatile.cpp.s
+
+vptr_vtable/07_vtable.o: vptr_vtable/07_vtable.cpp.o
+
+.PHONY : vptr_vtable/07_vtable.o
+
+# target to build an object file
+vptr_vtable/07_vtable.cpp.o:
+	$(MAKE) -f CMakeFiles/vptr_vtable.dir/build.make CMakeFiles/vptr_vtable.dir/vptr_vtable/07_vtable.cpp.o
+.PHONY : vptr_vtable/07_vtable.cpp.o
+
+vptr_vtable/07_vtable.i: vptr_vtable/07_vtable.cpp.i
+
+.PHONY : vptr_vtable/07_vtable.i
+
+# target to preprocess a source file
+vptr_vtable/07_vtable.cpp.i:
+	$(MAKE) -f CMakeFiles/vptr_vtable.dir/build.make CMakeFiles/vptr_vtable.dir/vptr_vtable/07_vtable.cpp.i
+.PHONY : vptr_vtable/07_vtable.cpp.i
+
+vptr_vtable/07_vtable.s: vptr_vtable/07_vtable.cpp.s
+
+.PHONY : vptr_vtable/07_vtable.s
+
+# target to generate assembly for a file
+vptr_vtable/07_vtable.cpp.s:
+	$(MAKE) -f CMakeFiles/vptr_vtable.dir/build.make CMakeFiles/vptr_vtable.dir/vptr_vtable/07_vtable.cpp.s
+.PHONY : vptr_vtable/07_vtable.cpp.s
 
 # Help Target
 help:
@@ -544,17 +704,24 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... static"
-	@echo "... vptr_vtable"
-	@echo "... sizeof"
+	@echo "... assert"
 	@echo "... virtual_become_abstract"
 	@echo "... inline"
-	@echo "... Review"
-	@echo "... edit_cache"
+	@echo "... virtual"
+	@echo "... sizeof"
+	@echo "... vptr_vtable"
+	@echo "... static"
 	@echo "... this"
 	@echo "... virtual_impl"
-	@echo "... virtual_abstrace"
+	@echo "... volatile"
+	@echo "... cast"
+	@echo "... pure_abstrace"
 	@echo "... const"
+	@echo "... edit_cache"
+	@echo "... Review"
+	@echo "... assert/11_assert.o"
+	@echo "... assert/11_assert.i"
+	@echo "... assert/11_assert.s"
 	@echo "... const/01_const.o"
 	@echo "... const/01_const.i"
 	@echo "... const/01_const.s"
@@ -567,6 +734,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... pure_abstrace/06_impl_abstract.o"
+	@echo "... pure_abstrace/06_impl_abstract.i"
+	@echo "... pure_abstrace/06_impl_abstract.s"
+	@echo "... pure_abstrace/06_single_virtual.o"
+	@echo "... pure_abstrace/06_single_virtual.i"
+	@echo "... pure_abstrace/06_single_virtual.s"
+	@echo "... pure_abstrace/06_virtual_become_abstract.o"
+	@echo "... pure_abstrace/06_virtual_become_abstract.i"
+	@echo "... pure_abstrace/06_virtual_become_abstract.s"
 	@echo "... sizeof/05_sizeof.o"
 	@echo "... sizeof/05_sizeof.i"
 	@echo "... sizeof/05_sizeof.s"
@@ -576,18 +752,18 @@ help:
 	@echo "... this/03_this.o"
 	@echo "... this/03_this.i"
 	@echo "... this/03_this.s"
-	@echo "... virtual_abstrace/06_impl_abstract.o"
-	@echo "... virtual_abstrace/06_impl_abstract.i"
-	@echo "... virtual_abstrace/06_impl_abstract.s"
-	@echo "... virtual_abstrace/06_single_virtual.o"
-	@echo "... virtual_abstrace/06_single_virtual.i"
-	@echo "... virtual_abstrace/06_single_virtual.s"
-	@echo "... virtual_abstrace/06_virtual_become_abstract.o"
-	@echo "... virtual_abstrace/06_virtual_become_abstract.i"
-	@echo "... virtual_abstrace/06_virtual_become_abstract.s"
-	@echo "... vptr_vtable/vtable.o"
-	@echo "... vptr_vtable/vtable.i"
-	@echo "... vptr_vtable/vtable.s"
+	@echo "... typecast/09_type_cast.o"
+	@echo "... typecast/09_type_cast.i"
+	@echo "... typecast/09_type_cast.s"
+	@echo "... virtual/08_virtual.o"
+	@echo "... virtual/08_virtual.i"
+	@echo "... virtual/08_virtual.s"
+	@echo "... volatile/10_volatile.o"
+	@echo "... volatile/10_volatile.i"
+	@echo "... volatile/10_volatile.s"
+	@echo "... vptr_vtable/07_vtable.o"
+	@echo "... vptr_vtable/07_vtable.i"
+	@echo "... vptr_vtable/07_vtable.s"
 .PHONY : help
 
 

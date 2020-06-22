@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/vptr_vtable.dir/vptr_vtable/vtable.cpp.o"
+  "CMakeFiles/vptr_vtable.dir/vptr_vtable/07_vtable.cpp.o"
   "vptr_vtable"
   "vptr_vtable.pdb"
 )

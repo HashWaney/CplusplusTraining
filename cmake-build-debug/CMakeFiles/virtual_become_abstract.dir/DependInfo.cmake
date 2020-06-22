@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/wangqing/Desktop/JNI/CPP/Review/virtual_abstrace/06_virtual_become_abstract.cpp" "/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/virtual_become_abstract.dir/virtual_abstrace/06_virtual_become_abstract.cpp.o"
+  "/Users/wangqing/Desktop/JNI/CPP/Review/pure_abstrace/06_virtual_become_abstract.cpp" "/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/virtual_become_abstract.dir/pure_abstrace/06_virtual_become_abstract.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

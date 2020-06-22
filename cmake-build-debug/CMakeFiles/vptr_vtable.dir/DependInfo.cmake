@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/wangqing/Desktop/JNI/CPP/Review/vptr_vtable/vtable.cpp" "/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/vptr_vtable.dir/vptr_vtable/vtable.cpp.o"
+  "/Users/wangqing/Desktop/JNI/CPP/Review/vptr_vtable/07_vtable.cpp" "/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/vptr_vtable.dir/vptr_vtable/07_vtable.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

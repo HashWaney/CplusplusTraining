@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/virtual_become_abstract.dir/virtual_abstrace/06_virtual_become_abstract.cpp.o"
+  "CMakeFiles/virtual_become_abstract.dir/pure_abstrace/06_virtual_become_abstract.cpp.o"
   "virtual_become_abstract"
   "virtual_become_abstract.pdb"
 )

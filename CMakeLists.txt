@@ -17,11 +17,16 @@ add_executable(inline
 
 add_executable(sizeof
         sizeof/05_sizeof.cpp)
-add_executable(virtual_abstrace
-        virtual_abstrace/06_single_virtual.cpp
+add_executable(pure_abstrace
+        pure_abstrace/06_single_virtual.cpp
        )
-add_executable(virtual_impl  virtual_abstrace/06_impl_abstract.cpp)
+add_executable(virtual_impl pure_abstrace/06_impl_abstract.cpp)
 
-add_executable(virtual_become_abstract virtual_abstrace/06_virtual_become_abstract.cpp)
+add_executable(virtual_become_abstract pure_abstrace/06_virtual_become_abstract.cpp)
 
-add_executable(vptr_vtable vptr_vtable/vtable.cpp)
+add_executable(vptr_vtable vptr_vtable/07_vtable.cpp)
+
+add_executable(virtual virtual/08_virtual.cpp)
+add_executable(cast typecast/09_type_cast.cpp)
+add_executable(volatile volatile/10_volatile.cpp)
+add_executable(assert assert/11_assert.cpp)

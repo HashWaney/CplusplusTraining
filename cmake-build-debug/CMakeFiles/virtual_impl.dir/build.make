@@ -57,27 +57,27 @@ include CMakeFiles/virtual_impl.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/virtual_impl.dir/flags.make
 
-CMakeFiles/virtual_impl.dir/virtual_abstrace/06_impl_abstract.cpp.o: CMakeFiles/virtual_impl.dir/flags.make
-CMakeFiles/virtual_impl.dir/virtual_abstrace/06_impl_abstract.cpp.o: ../virtual_abstrace/06_impl_abstract.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/virtual_impl.dir/virtual_abstrace/06_impl_abstract.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/virtual_impl.dir/virtual_abstrace/06_impl_abstract.cpp.o -c /Users/wangqing/Desktop/JNI/CPP/Review/virtual_abstrace/06_impl_abstract.cpp
+CMakeFiles/virtual_impl.dir/pure_abstrace/06_impl_abstract.cpp.o: CMakeFiles/virtual_impl.dir/flags.make
+CMakeFiles/virtual_impl.dir/pure_abstrace/06_impl_abstract.cpp.o: ../pure_abstrace/06_impl_abstract.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/virtual_impl.dir/pure_abstrace/06_impl_abstract.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/virtual_impl.dir/pure_abstrace/06_impl_abstract.cpp.o -c /Users/wangqing/Desktop/JNI/CPP/Review/pure_abstrace/06_impl_abstract.cpp
 
-CMakeFiles/virtual_impl.dir/virtual_abstrace/06_impl_abstract.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/virtual_impl.dir/virtual_abstrace/06_impl_abstract.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangqing/Desktop/JNI/CPP/Review/virtual_abstrace/06_impl_abstract.cpp > CMakeFiles/virtual_impl.dir/virtual_abstrace/06_impl_abstract.cpp.i
+CMakeFiles/virtual_impl.dir/pure_abstrace/06_impl_abstract.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/virtual_impl.dir/pure_abstrace/06_impl_abstract.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/wangqing/Desktop/JNI/CPP/Review/pure_abstrace/06_impl_abstract.cpp > CMakeFiles/virtual_impl.dir/pure_abstrace/06_impl_abstract.cpp.i
 
-CMakeFiles/virtual_impl.dir/virtual_abstrace/06_impl_abstract.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/virtual_impl.dir/virtual_abstrace/06_impl_abstract.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangqing/Desktop/JNI/CPP/Review/virtual_abstrace/06_impl_abstract.cpp -o CMakeFiles/virtual_impl.dir/virtual_abstrace/06_impl_abstract.cpp.s
+CMakeFiles/virtual_impl.dir/pure_abstrace/06_impl_abstract.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/virtual_impl.dir/pure_abstrace/06_impl_abstract.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/wangqing/Desktop/JNI/CPP/Review/pure_abstrace/06_impl_abstract.cpp -o CMakeFiles/virtual_impl.dir/pure_abstrace/06_impl_abstract.cpp.s
 
 # Object files for target virtual_impl
 virtual_impl_OBJECTS = \
-"CMakeFiles/virtual_impl.dir/virtual_abstrace/06_impl_abstract.cpp.o"
+"CMakeFiles/virtual_impl.dir/pure_abstrace/06_impl_abstract.cpp.o"
 
 # External object files for target virtual_impl
 virtual_impl_EXTERNAL_OBJECTS =
 
-virtual_impl: CMakeFiles/virtual_impl.dir/virtual_abstrace/06_impl_abstract.cpp.o
+virtual_impl: CMakeFiles/virtual_impl.dir/pure_abstrace/06_impl_abstract.cpp.o
 virtual_impl: CMakeFiles/virtual_impl.dir/build.make
 virtual_impl: CMakeFiles/virtual_impl.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable virtual_impl"
