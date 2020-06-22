@@ -3,7 +3,7 @@ project(Review)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(Review main.cpp)
+
 add_executable(const
         const/01_const.cpp const/01_const_extern.cpp)
 add_executable(static
@@ -30,8 +30,10 @@ add_executable(virtual virtual/08_virtual.cpp)
 add_executable(cast typecast/09_type_cast.cpp)
 add_executable(volatile volatile/10_volatile.cpp)
 add_executable(assert assert/11_assert.cpp)
-add_executable(extern extern/12_extern_cpp_invoke_c.cpp
-        extern/add.c)
+#add_executable(extern extern/12_extern_cpp_invoke_c.cpp
+#        extern/add.c)
+#
+#add_executable(extern c_extern/12_extern_c_invoke_cpp.c
+#        c_extern/haha.cpp)
 
-add_executable(extern c_extern/12_extern_c_invoke_cpp.c
-        c_extern/haha.cpp)
+add_executable(struct struct/13_struct.cpp)

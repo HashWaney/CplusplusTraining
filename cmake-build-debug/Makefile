@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named struct
+
+# Build rule for target.
+struct: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 struct
+.PHONY : struct
+
+# fast build rule for target.
+struct/fast:
+	$(MAKE) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/build
+.PHONY : struct/fast
+
+#=============================================================================
 # Target rules for targets named assert
 
 # Build rule for target.
@@ -122,19 +135,6 @@ assert: cmake_check_build_system
 assert/fast:
 	$(MAKE) -f CMakeFiles/assert.dir/build.make CMakeFiles/assert.dir/build
 .PHONY : assert/fast
-
-#=============================================================================
-# Target rules for targets named extern
-
-# Build rule for target.
-extern: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 extern
-.PHONY : extern
-
-# fast build rule for target.
-extern/fast:
-	$(MAKE) -f CMakeFiles/extern.dir/build.make CMakeFiles/extern.dir/build
-.PHONY : extern/fast
 
 #=============================================================================
 # Target rules for targets named virtual_become_abstract
@@ -176,6 +176,19 @@ virtual/fast:
 .PHONY : virtual/fast
 
 #=============================================================================
+# Target rules for targets named static
+
+# Build rule for target.
+static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 static
+.PHONY : static
+
+# fast build rule for target.
+static/fast:
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/build
+.PHONY : static/fast
+
+#=============================================================================
 # Target rules for targets named sizeof
 
 # Build rule for target.
@@ -202,19 +215,6 @@ vptr_vtable/fast:
 .PHONY : vptr_vtable/fast
 
 #=============================================================================
-# Target rules for targets named static
-
-# Build rule for target.
-static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 static
-.PHONY : static
-
-# fast build rule for target.
-static/fast:
-	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/build
-.PHONY : static/fast
-
-#=============================================================================
 # Target rules for targets named this
 
 # Build rule for target.
@@ -226,19 +226,6 @@ this: cmake_check_build_system
 this/fast:
 	$(MAKE) -f CMakeFiles/this.dir/build.make CMakeFiles/this.dir/build
 .PHONY : this/fast
-
-#=============================================================================
-# Target rules for targets named virtual_impl
-
-# Build rule for target.
-virtual_impl: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 virtual_impl
-.PHONY : virtual_impl
-
-# fast build rule for target.
-virtual_impl/fast:
-	$(MAKE) -f CMakeFiles/virtual_impl.dir/build.make CMakeFiles/virtual_impl.dir/build
-.PHONY : virtual_impl/fast
 
 #=============================================================================
 # Target rules for targets named volatile
@@ -254,19 +241,6 @@ volatile/fast:
 .PHONY : volatile/fast
 
 #=============================================================================
-# Target rules for targets named cast
-
-# Build rule for target.
-cast: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cast
-.PHONY : cast
-
-# fast build rule for target.
-cast/fast:
-	$(MAKE) -f CMakeFiles/cast.dir/build.make CMakeFiles/cast.dir/build
-.PHONY : cast/fast
-
-#=============================================================================
 # Target rules for targets named pure_abstrace
 
 # Build rule for target.
@@ -280,6 +254,32 @@ pure_abstrace/fast:
 .PHONY : pure_abstrace/fast
 
 #=============================================================================
+# Target rules for targets named cast
+
+# Build rule for target.
+cast: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cast
+.PHONY : cast
+
+# fast build rule for target.
+cast/fast:
+	$(MAKE) -f CMakeFiles/cast.dir/build.make CMakeFiles/cast.dir/build
+.PHONY : cast/fast
+
+#=============================================================================
+# Target rules for targets named virtual_impl
+
+# Build rule for target.
+virtual_impl: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 virtual_impl
+.PHONY : virtual_impl
+
+# fast build rule for target.
+virtual_impl/fast:
+	$(MAKE) -f CMakeFiles/virtual_impl.dir/build.make CMakeFiles/virtual_impl.dir/build
+.PHONY : virtual_impl/fast
+
+#=============================================================================
 # Target rules for targets named const
 
 # Build rule for target.
@@ -291,19 +291,6 @@ const: cmake_check_build_system
 const/fast:
 	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/build
 .PHONY : const/fast
-
-#=============================================================================
-# Target rules for targets named Review
-
-# Build rule for target.
-Review: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Review
-.PHONY : Review
-
-# fast build rule for target.
-Review/fast:
-	$(MAKE) -f CMakeFiles/Review.dir/build.make CMakeFiles/Review.dir/build
-.PHONY : Review/fast
 
 assert/11_assert.o: assert/11_assert.cpp.o
 
@@ -386,60 +373,6 @@ const/01_const_extern.cpp.s:
 	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/const/01_const_extern.cpp.s
 .PHONY : const/01_const_extern.cpp.s
 
-extern/12_extern_cpp_invoke_c.o: extern/12_extern_cpp_invoke_c.cpp.o
-
-.PHONY : extern/12_extern_cpp_invoke_c.o
-
-# target to build an object file
-extern/12_extern_cpp_invoke_c.cpp.o:
-	$(MAKE) -f CMakeFiles/extern.dir/build.make CMakeFiles/extern.dir/extern/12_extern_cpp_invoke_c.cpp.o
-.PHONY : extern/12_extern_cpp_invoke_c.cpp.o
-
-extern/12_extern_cpp_invoke_c.i: extern/12_extern_cpp_invoke_c.cpp.i
-
-.PHONY : extern/12_extern_cpp_invoke_c.i
-
-# target to preprocess a source file
-extern/12_extern_cpp_invoke_c.cpp.i:
-	$(MAKE) -f CMakeFiles/extern.dir/build.make CMakeFiles/extern.dir/extern/12_extern_cpp_invoke_c.cpp.i
-.PHONY : extern/12_extern_cpp_invoke_c.cpp.i
-
-extern/12_extern_cpp_invoke_c.s: extern/12_extern_cpp_invoke_c.cpp.s
-
-.PHONY : extern/12_extern_cpp_invoke_c.s
-
-# target to generate assembly for a file
-extern/12_extern_cpp_invoke_c.cpp.s:
-	$(MAKE) -f CMakeFiles/extern.dir/build.make CMakeFiles/extern.dir/extern/12_extern_cpp_invoke_c.cpp.s
-.PHONY : extern/12_extern_cpp_invoke_c.cpp.s
-
-extern/add.o: extern/add.c.o
-
-.PHONY : extern/add.o
-
-# target to build an object file
-extern/add.c.o:
-	$(MAKE) -f CMakeFiles/extern.dir/build.make CMakeFiles/extern.dir/extern/add.c.o
-.PHONY : extern/add.c.o
-
-extern/add.i: extern/add.c.i
-
-.PHONY : extern/add.i
-
-# target to preprocess a source file
-extern/add.c.i:
-	$(MAKE) -f CMakeFiles/extern.dir/build.make CMakeFiles/extern.dir/extern/add.c.i
-.PHONY : extern/add.c.i
-
-extern/add.s: extern/add.c.s
-
-.PHONY : extern/add.s
-
-# target to generate assembly for a file
-extern/add.c.s:
-	$(MAKE) -f CMakeFiles/extern.dir/build.make CMakeFiles/extern.dir/extern/add.c.s
-.PHONY : extern/add.c.s
-
 inline/04_inline.o: inline/04_inline.cpp.o
 
 .PHONY : inline/04_inline.o
@@ -466,33 +399,6 @@ inline/04_inline.s: inline/04_inline.cpp.s
 inline/04_inline.cpp.s:
 	$(MAKE) -f CMakeFiles/inline.dir/build.make CMakeFiles/inline.dir/inline/04_inline.cpp.s
 .PHONY : inline/04_inline.cpp.s
-
-main.o: main.cpp.o
-
-.PHONY : main.o
-
-# target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/Review.dir/build.make CMakeFiles/Review.dir/main.cpp.o
-.PHONY : main.cpp.o
-
-main.i: main.cpp.i
-
-.PHONY : main.i
-
-# target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/Review.dir/build.make CMakeFiles/Review.dir/main.cpp.i
-.PHONY : main.cpp.i
-
-main.s: main.cpp.s
-
-.PHONY : main.s
-
-# target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/Review.dir/build.make CMakeFiles/Review.dir/main.cpp.s
-.PHONY : main.cpp.s
 
 pure_abstrace/06_impl_abstract.o: pure_abstrace/06_impl_abstract.cpp.o
 
@@ -628,6 +534,33 @@ static/02_static.s: static/02_static.cpp.s
 static/02_static.cpp.s:
 	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/static/02_static.cpp.s
 .PHONY : static/02_static.cpp.s
+
+struct/13_struct.o: struct/13_struct.cpp.o
+
+.PHONY : struct/13_struct.o
+
+# target to build an object file
+struct/13_struct.cpp.o:
+	$(MAKE) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/struct/13_struct.cpp.o
+.PHONY : struct/13_struct.cpp.o
+
+struct/13_struct.i: struct/13_struct.cpp.i
+
+.PHONY : struct/13_struct.i
+
+# target to preprocess a source file
+struct/13_struct.cpp.i:
+	$(MAKE) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/struct/13_struct.cpp.i
+.PHONY : struct/13_struct.cpp.i
+
+struct/13_struct.s: struct/13_struct.cpp.s
+
+.PHONY : struct/13_struct.s
+
+# target to generate assembly for a file
+struct/13_struct.cpp.s:
+	$(MAKE) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/struct/13_struct.cpp.s
+.PHONY : struct/13_struct.cpp.s
 
 this/03_this.o: this/03_this.cpp.o
 
@@ -771,22 +704,21 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
+	@echo "... edit_cache"
+	@echo "... struct"
 	@echo "... assert"
-	@echo "... extern"
 	@echo "... virtual_become_abstract"
 	@echo "... inline"
 	@echo "... virtual"
+	@echo "... static"
 	@echo "... sizeof"
 	@echo "... vptr_vtable"
-	@echo "... static"
 	@echo "... this"
-	@echo "... virtual_impl"
 	@echo "... volatile"
-	@echo "... cast"
 	@echo "... pure_abstrace"
+	@echo "... cast"
+	@echo "... virtual_impl"
 	@echo "... const"
-	@echo "... edit_cache"
-	@echo "... Review"
 	@echo "... assert/11_assert.o"
 	@echo "... assert/11_assert.i"
 	@echo "... assert/11_assert.s"
@@ -796,18 +728,9 @@ help:
 	@echo "... const/01_const_extern.o"
 	@echo "... const/01_const_extern.i"
 	@echo "... const/01_const_extern.s"
-	@echo "... extern/12_extern_cpp_invoke_c.o"
-	@echo "... extern/12_extern_cpp_invoke_c.i"
-	@echo "... extern/12_extern_cpp_invoke_c.s"
-	@echo "... extern/add.o"
-	@echo "... extern/add.i"
-	@echo "... extern/add.s"
 	@echo "... inline/04_inline.o"
 	@echo "... inline/04_inline.i"
 	@echo "... inline/04_inline.s"
-	@echo "... main.o"
-	@echo "... main.i"
-	@echo "... main.s"
 	@echo "... pure_abstrace/06_impl_abstract.o"
 	@echo "... pure_abstrace/06_impl_abstract.i"
 	@echo "... pure_abstrace/06_impl_abstract.s"
@@ -823,6 +746,9 @@ help:
 	@echo "... static/02_static.o"
 	@echo "... static/02_static.i"
 	@echo "... static/02_static.s"
+	@echo "... struct/13_struct.o"
+	@echo "... struct/13_struct.i"
+	@echo "... struct/13_struct.s"
 	@echo "... this/03_this.o"
 	@echo "... this/03_this.i"
 	@echo "... this/03_this.s"

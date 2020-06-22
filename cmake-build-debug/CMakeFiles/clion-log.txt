@@ -1,10 +1,4 @@
 /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/wangqing/Desktop/JNI/CPP/Review
-CMake Error at CMakeLists.txt:36 (add_executable):
-  add_executable cannot create target "extern" because another target with
-  the same name already exists.  The existing target is an executable created
-  in source directory "/Users/wangqing/Desktop/JNI/CPP/Review".  See
-  documentation for policy CMP0002 for more details.
-
-
--- Configuring incomplete, errors occurred!
-See also "/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/CMakeOutput.log".
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug

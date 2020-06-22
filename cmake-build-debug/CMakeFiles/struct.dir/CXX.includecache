@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wangqing/Desktop/JNI/CPP/Review/struct/13_struct.cpp
+stdio.h
+/Users/wangqing/Desktop/JNI/CPP/Review/struct/stdio.h
+
