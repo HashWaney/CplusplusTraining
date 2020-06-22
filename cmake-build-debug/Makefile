@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named static
+
+# Build rule for target.
+static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 static
+.PHONY : static
+
+# fast build rule for target.
+static/fast:
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/build
+.PHONY : static/fast
+
+#=============================================================================
+# Target rules for targets named vptr_vtable
+
+# Build rule for target.
+vptr_vtable: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 vptr_vtable
+.PHONY : vptr_vtable
+
+# fast build rule for target.
+vptr_vtable/fast:
+	$(MAKE) -f CMakeFiles/vptr_vtable.dir/build.make CMakeFiles/vptr_vtable.dir/build
+.PHONY : vptr_vtable/fast
+
+#=============================================================================
 # Target rules for targets named sizeof
 
 # Build rule for target.
@@ -122,6 +148,19 @@ sizeof: cmake_check_build_system
 sizeof/fast:
 	$(MAKE) -f CMakeFiles/sizeof.dir/build.make CMakeFiles/sizeof.dir/build
 .PHONY : sizeof/fast
+
+#=============================================================================
+# Target rules for targets named virtual_become_abstract
+
+# Build rule for target.
+virtual_become_abstract: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 virtual_become_abstract
+.PHONY : virtual_become_abstract
+
+# fast build rule for target.
+virtual_become_abstract/fast:
+	$(MAKE) -f CMakeFiles/virtual_become_abstract.dir/build.make CMakeFiles/virtual_become_abstract.dir/build
+.PHONY : virtual_become_abstract/fast
 
 #=============================================================================
 # Target rules for targets named inline
@@ -137,17 +176,17 @@ inline/fast:
 .PHONY : inline/fast
 
 #=============================================================================
-# Target rules for targets named static
+# Target rules for targets named Review
 
 # Build rule for target.
-static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 static
-.PHONY : static
+Review: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 Review
+.PHONY : Review
 
 # fast build rule for target.
-static/fast:
-	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/build
-.PHONY : static/fast
+Review/fast:
+	$(MAKE) -f CMakeFiles/Review.dir/build.make CMakeFiles/Review.dir/build
+.PHONY : Review/fast
 
 #=============================================================================
 # Target rules for targets named this
@@ -161,19 +200,6 @@ this: cmake_check_build_system
 this/fast:
 	$(MAKE) -f CMakeFiles/this.dir/build.make CMakeFiles/this.dir/build
 .PHONY : this/fast
-
-#=============================================================================
-# Target rules for targets named virtual_become_abstract
-
-# Build rule for target.
-virtual_become_abstract: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 virtual_become_abstract
-.PHONY : virtual_become_abstract
-
-# fast build rule for target.
-virtual_become_abstract/fast:
-	$(MAKE) -f CMakeFiles/virtual_become_abstract.dir/build.make CMakeFiles/virtual_become_abstract.dir/build
-.PHONY : virtual_become_abstract/fast
 
 #=============================================================================
 # Target rules for targets named virtual_impl
@@ -213,19 +239,6 @@ const: cmake_check_build_system
 const/fast:
 	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/build
 .PHONY : const/fast
-
-#=============================================================================
-# Target rules for targets named Review
-
-# Build rule for target.
-Review: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 Review
-.PHONY : Review
-
-# fast build rule for target.
-Review/fast:
-	$(MAKE) -f CMakeFiles/Review.dir/build.make CMakeFiles/Review.dir/build
-.PHONY : Review/fast
 
 const/01_const.o: const/01_const.cpp.o
 
@@ -497,6 +510,33 @@ virtual_abstrace/06_virtual_become_abstract.cpp.s:
 	$(MAKE) -f CMakeFiles/virtual_become_abstract.dir/build.make CMakeFiles/virtual_become_abstract.dir/virtual_abstrace/06_virtual_become_abstract.cpp.s
 .PHONY : virtual_abstrace/06_virtual_become_abstract.cpp.s
 
+vptr_vtable/vtable.o: vptr_vtable/vtable.cpp.o
+
+.PHONY : vptr_vtable/vtable.o
+
+# target to build an object file
+vptr_vtable/vtable.cpp.o:
+	$(MAKE) -f CMakeFiles/vptr_vtable.dir/build.make CMakeFiles/vptr_vtable.dir/vptr_vtable/vtable.cpp.o
+.PHONY : vptr_vtable/vtable.cpp.o
+
+vptr_vtable/vtable.i: vptr_vtable/vtable.cpp.i
+
+.PHONY : vptr_vtable/vtable.i
+
+# target to preprocess a source file
+vptr_vtable/vtable.cpp.i:
+	$(MAKE) -f CMakeFiles/vptr_vtable.dir/build.make CMakeFiles/vptr_vtable.dir/vptr_vtable/vtable.cpp.i
+.PHONY : vptr_vtable/vtable.cpp.i
+
+vptr_vtable/vtable.s: vptr_vtable/vtable.cpp.s
+
+.PHONY : vptr_vtable/vtable.s
+
+# target to generate assembly for a file
+vptr_vtable/vtable.cpp.s:
+	$(MAKE) -f CMakeFiles/vptr_vtable.dir/build.make CMakeFiles/vptr_vtable.dir/vptr_vtable/vtable.cpp.s
+.PHONY : vptr_vtable/vtable.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -504,16 +544,17 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... rebuild_cache"
-	@echo "... sizeof"
-	@echo "... inline"
-	@echo "... edit_cache"
 	@echo "... static"
-	@echo "... this"
+	@echo "... vptr_vtable"
+	@echo "... sizeof"
 	@echo "... virtual_become_abstract"
+	@echo "... inline"
+	@echo "... Review"
+	@echo "... edit_cache"
+	@echo "... this"
 	@echo "... virtual_impl"
 	@echo "... virtual_abstrace"
 	@echo "... const"
-	@echo "... Review"
 	@echo "... const/01_const.o"
 	@echo "... const/01_const.i"
 	@echo "... const/01_const.s"
@@ -544,6 +585,9 @@ help:
 	@echo "... virtual_abstrace/06_virtual_become_abstract.o"
 	@echo "... virtual_abstrace/06_virtual_become_abstract.i"
 	@echo "... virtual_abstrace/06_virtual_become_abstract.s"
+	@echo "... vptr_vtable/vtable.o"
+	@echo "... vptr_vtable/vtable.i"
+	@echo "... vptr_vtable/vtable.s"
 .PHONY : help
 
 
