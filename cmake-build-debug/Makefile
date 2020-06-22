@@ -111,6 +111,45 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named poly
+
+# Build rule for target.
+poly: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 poly
+.PHONY : poly
+
+# fast build rule for target.
+poly/fast:
+	$(MAKE) -f CMakeFiles/poly.dir/build.make CMakeFiles/poly.dir/build
+.PHONY : poly/fast
+
+#=============================================================================
+# Target rules for targets named union
+
+# Build rule for target.
+union: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 union
+.PHONY : union
+
+# fast build rule for target.
+union/fast:
+	$(MAKE) -f CMakeFiles/union.dir/build.make CMakeFiles/union.dir/build
+.PHONY : union/fast
+
+#=============================================================================
+# Target rules for targets named cpppoly
+
+# Build rule for target.
+cpppoly: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cpppoly
+.PHONY : cpppoly
+
+# fast build rule for target.
+cpppoly/fast:
+	$(MAKE) -f CMakeFiles/cpppoly.dir/build.make CMakeFiles/cpppoly.dir/build
+.PHONY : cpppoly/fast
+
+#=============================================================================
 # Target rules for targets named struct
 
 # Build rule for target.
@@ -291,6 +330,60 @@ const: cmake_check_build_system
 const/fast:
 	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/build
 .PHONY : const/fast
+
+Polymorphism/15_c_poly.o: Polymorphism/15_c_poly.c.o
+
+.PHONY : Polymorphism/15_c_poly.o
+
+# target to build an object file
+Polymorphism/15_c_poly.c.o:
+	$(MAKE) -f CMakeFiles/poly.dir/build.make CMakeFiles/poly.dir/Polymorphism/15_c_poly.c.o
+.PHONY : Polymorphism/15_c_poly.c.o
+
+Polymorphism/15_c_poly.i: Polymorphism/15_c_poly.c.i
+
+.PHONY : Polymorphism/15_c_poly.i
+
+# target to preprocess a source file
+Polymorphism/15_c_poly.c.i:
+	$(MAKE) -f CMakeFiles/poly.dir/build.make CMakeFiles/poly.dir/Polymorphism/15_c_poly.c.i
+.PHONY : Polymorphism/15_c_poly.c.i
+
+Polymorphism/15_c_poly.s: Polymorphism/15_c_poly.c.s
+
+.PHONY : Polymorphism/15_c_poly.s
+
+# target to generate assembly for a file
+Polymorphism/15_c_poly.c.s:
+	$(MAKE) -f CMakeFiles/poly.dir/build.make CMakeFiles/poly.dir/Polymorphism/15_c_poly.c.s
+.PHONY : Polymorphism/15_c_poly.c.s
+
+Polymorphism/15_cpp_poly.o: Polymorphism/15_cpp_poly.cpp.o
+
+.PHONY : Polymorphism/15_cpp_poly.o
+
+# target to build an object file
+Polymorphism/15_cpp_poly.cpp.o:
+	$(MAKE) -f CMakeFiles/cpppoly.dir/build.make CMakeFiles/cpppoly.dir/Polymorphism/15_cpp_poly.cpp.o
+.PHONY : Polymorphism/15_cpp_poly.cpp.o
+
+Polymorphism/15_cpp_poly.i: Polymorphism/15_cpp_poly.cpp.i
+
+.PHONY : Polymorphism/15_cpp_poly.i
+
+# target to preprocess a source file
+Polymorphism/15_cpp_poly.cpp.i:
+	$(MAKE) -f CMakeFiles/cpppoly.dir/build.make CMakeFiles/cpppoly.dir/Polymorphism/15_cpp_poly.cpp.i
+.PHONY : Polymorphism/15_cpp_poly.cpp.i
+
+Polymorphism/15_cpp_poly.s: Polymorphism/15_cpp_poly.cpp.s
+
+.PHONY : Polymorphism/15_cpp_poly.s
+
+# target to generate assembly for a file
+Polymorphism/15_cpp_poly.cpp.s:
+	$(MAKE) -f CMakeFiles/cpppoly.dir/build.make CMakeFiles/cpppoly.dir/Polymorphism/15_cpp_poly.cpp.s
+.PHONY : Polymorphism/15_cpp_poly.cpp.s
 
 assert/11_assert.o: assert/11_assert.cpp.o
 
@@ -616,6 +709,33 @@ typecast/09_type_cast.cpp.s:
 	$(MAKE) -f CMakeFiles/cast.dir/build.make CMakeFiles/cast.dir/typecast/09_type_cast.cpp.s
 .PHONY : typecast/09_type_cast.cpp.s
 
+union/14_union.o: union/14_union.cpp.o
+
+.PHONY : union/14_union.o
+
+# target to build an object file
+union/14_union.cpp.o:
+	$(MAKE) -f CMakeFiles/union.dir/build.make CMakeFiles/union.dir/union/14_union.cpp.o
+.PHONY : union/14_union.cpp.o
+
+union/14_union.i: union/14_union.cpp.i
+
+.PHONY : union/14_union.i
+
+# target to preprocess a source file
+union/14_union.cpp.i:
+	$(MAKE) -f CMakeFiles/union.dir/build.make CMakeFiles/union.dir/union/14_union.cpp.i
+.PHONY : union/14_union.cpp.i
+
+union/14_union.s: union/14_union.cpp.s
+
+.PHONY : union/14_union.s
+
+# target to generate assembly for a file
+union/14_union.cpp.s:
+	$(MAKE) -f CMakeFiles/union.dir/build.make CMakeFiles/union.dir/union/14_union.cpp.s
+.PHONY : union/14_union.cpp.s
+
 virtual/08_virtual.o: virtual/08_virtual.cpp.o
 
 .PHONY : virtual/08_virtual.o
@@ -705,6 +825,9 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... poly"
+	@echo "... union"
+	@echo "... cpppoly"
 	@echo "... struct"
 	@echo "... assert"
 	@echo "... virtual_become_abstract"
@@ -719,6 +842,12 @@ help:
 	@echo "... cast"
 	@echo "... virtual_impl"
 	@echo "... const"
+	@echo "... Polymorphism/15_c_poly.o"
+	@echo "... Polymorphism/15_c_poly.i"
+	@echo "... Polymorphism/15_c_poly.s"
+	@echo "... Polymorphism/15_cpp_poly.o"
+	@echo "... Polymorphism/15_cpp_poly.i"
+	@echo "... Polymorphism/15_cpp_poly.s"
 	@echo "... assert/11_assert.o"
 	@echo "... assert/11_assert.i"
 	@echo "... assert/11_assert.s"
@@ -755,6 +884,9 @@ help:
 	@echo "... typecast/09_type_cast.o"
 	@echo "... typecast/09_type_cast.i"
 	@echo "... typecast/09_type_cast.s"
+	@echo "... union/14_union.o"
+	@echo "... union/14_union.i"
+	@echo "... union/14_union.s"
 	@echo "... virtual/08_virtual.o"
 	@echo "... virtual/08_virtual.i"
 	@echo "... virtual/08_virtual.s"

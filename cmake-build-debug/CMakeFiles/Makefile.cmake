@@ -52,6 +52,9 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/poly.dir/DependInfo.cmake"
+  "CMakeFiles/union.dir/DependInfo.cmake"
+  "CMakeFiles/cpppoly.dir/DependInfo.cmake"
   "CMakeFiles/struct.dir/DependInfo.cmake"
   "CMakeFiles/assert.dir/DependInfo.cmake"
   "CMakeFiles/virtual_become_abstract.dir/DependInfo.cmake"

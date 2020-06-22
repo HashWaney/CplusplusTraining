@@ -11,6 +11,13 @@
 // C++结构体中使用访问修饰：private 、public 、protected
 // C++结构体中可以直接使用不同struct，但是由同名的函数，或者其他，就需要带上struct
 
+//3. Strcut 与 class 区别
+// struct更适合看成一个数据结构的实现体，class 更适合看成一个对象的实现体
+// 最本质的一个区别：默认的访问控制，默认的继承访问权限
+// struct是public， class 是private
+// struct作为数据结构的实现体，它默认的数据访问控制是public，而class作为对象的实现体，默认的成员变量访问控制是private的
+
+
 #include "stdio.h"
 
 struct Base {
