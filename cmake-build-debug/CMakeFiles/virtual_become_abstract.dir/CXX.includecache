@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/wangqing/Desktop/JNI/CPP/Review/virtual_abstrace/06_virtual_become_abstract.cpp
+/Users/wangqing/Desktop/JNI/CPP/Review/pure_abstrace/06_virtual_become_abstract.cpp
 iostream
-/Users/wangqing/Desktop/JNI/CPP/Review/virtual_abstrace/iostream
+/Users/wangqing/Desktop/JNI/CPP/Review/pure_abstrace/iostream
 

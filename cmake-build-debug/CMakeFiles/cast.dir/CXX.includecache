@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/wangqing/Desktop/JNI/CPP/Review/virtual/09_cast.cpp
+/Users/wangqing/Desktop/JNI/CPP/Review/typecast/09_type_cast.cpp
 iostream
 -
 typeinfo

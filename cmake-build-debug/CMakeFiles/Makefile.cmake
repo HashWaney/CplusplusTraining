@@ -53,6 +53,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/assert.dir/DependInfo.cmake"
+  "CMakeFiles/extern.dir/DependInfo.cmake"
   "CMakeFiles/virtual_become_abstract.dir/DependInfo.cmake"
   "CMakeFiles/inline.dir/DependInfo.cmake"
   "CMakeFiles/virtual.dir/DependInfo.cmake"

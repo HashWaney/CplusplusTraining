@@ -6,7 +6,7 @@
 
 #IncludeRegexTransform: 
 
-/Users/wangqing/Desktop/JNI/CPP/Review/vptr_vtable/vtable.cpp
+/Users/wangqing/Desktop/JNI/CPP/Review/vptr_vtable/07_vtable.cpp
 iostream
 /Users/wangqing/Desktop/JNI/CPP/Review/vptr_vtable/iostream
 stdio.h

@@ -1,5 +1,6 @@
 /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/rebuild_cache.dir
 /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/assert.dir
+/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/extern.dir
 /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/virtual_become_abstract.dir
 /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/inline.dir
 /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/virtual.dir

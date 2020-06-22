@@ -19,7 +19,7 @@ add_executable(sizeof
         sizeof/05_sizeof.cpp)
 add_executable(pure_abstrace
         pure_abstrace/06_single_virtual.cpp
-       )
+        )
 add_executable(virtual_impl pure_abstrace/06_impl_abstract.cpp)
 
 add_executable(virtual_become_abstract pure_abstrace/06_virtual_become_abstract.cpp)
@@ -30,3 +30,8 @@ add_executable(virtual virtual/08_virtual.cpp)
 add_executable(cast typecast/09_type_cast.cpp)
 add_executable(volatile volatile/10_volatile.cpp)
 add_executable(assert assert/11_assert.cpp)
+add_executable(extern extern/12_extern_cpp_invoke_c.cpp
+        extern/add.c)
+
+add_executable(extern c_extern/12_extern_c_invoke_cpp.c
+        c_extern/haha.cpp)

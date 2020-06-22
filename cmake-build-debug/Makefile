@@ -124,6 +124,19 @@ assert/fast:
 .PHONY : assert/fast
 
 #=============================================================================
+# Target rules for targets named extern
+
+# Build rule for target.
+extern: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 extern
+.PHONY : extern
+
+# fast build rule for target.
+extern/fast:
+	$(MAKE) -f CMakeFiles/extern.dir/build.make CMakeFiles/extern.dir/build
+.PHONY : extern/fast
+
+#=============================================================================
 # Target rules for targets named virtual_become_abstract
 
 # Build rule for target.
@@ -372,6 +385,60 @@ const/01_const_extern.s: const/01_const_extern.cpp.s
 const/01_const_extern.cpp.s:
 	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/const/01_const_extern.cpp.s
 .PHONY : const/01_const_extern.cpp.s
+
+extern/12_extern_cpp_invoke_c.o: extern/12_extern_cpp_invoke_c.cpp.o
+
+.PHONY : extern/12_extern_cpp_invoke_c.o
+
+# target to build an object file
+extern/12_extern_cpp_invoke_c.cpp.o:
+	$(MAKE) -f CMakeFiles/extern.dir/build.make CMakeFiles/extern.dir/extern/12_extern_cpp_invoke_c.cpp.o
+.PHONY : extern/12_extern_cpp_invoke_c.cpp.o
+
+extern/12_extern_cpp_invoke_c.i: extern/12_extern_cpp_invoke_c.cpp.i
+
+.PHONY : extern/12_extern_cpp_invoke_c.i
+
+# target to preprocess a source file
+extern/12_extern_cpp_invoke_c.cpp.i:
+	$(MAKE) -f CMakeFiles/extern.dir/build.make CMakeFiles/extern.dir/extern/12_extern_cpp_invoke_c.cpp.i
+.PHONY : extern/12_extern_cpp_invoke_c.cpp.i
+
+extern/12_extern_cpp_invoke_c.s: extern/12_extern_cpp_invoke_c.cpp.s
+
+.PHONY : extern/12_extern_cpp_invoke_c.s
+
+# target to generate assembly for a file
+extern/12_extern_cpp_invoke_c.cpp.s:
+	$(MAKE) -f CMakeFiles/extern.dir/build.make CMakeFiles/extern.dir/extern/12_extern_cpp_invoke_c.cpp.s
+.PHONY : extern/12_extern_cpp_invoke_c.cpp.s
+
+extern/add.o: extern/add.c.o
+
+.PHONY : extern/add.o
+
+# target to build an object file
+extern/add.c.o:
+	$(MAKE) -f CMakeFiles/extern.dir/build.make CMakeFiles/extern.dir/extern/add.c.o
+.PHONY : extern/add.c.o
+
+extern/add.i: extern/add.c.i
+
+.PHONY : extern/add.i
+
+# target to preprocess a source file
+extern/add.c.i:
+	$(MAKE) -f CMakeFiles/extern.dir/build.make CMakeFiles/extern.dir/extern/add.c.i
+.PHONY : extern/add.c.i
+
+extern/add.s: extern/add.c.s
+
+.PHONY : extern/add.s
+
+# target to generate assembly for a file
+extern/add.c.s:
+	$(MAKE) -f CMakeFiles/extern.dir/build.make CMakeFiles/extern.dir/extern/add.c.s
+.PHONY : extern/add.c.s
 
 inline/04_inline.o: inline/04_inline.cpp.o
 
@@ -705,6 +772,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... assert"
+	@echo "... extern"
 	@echo "... virtual_become_abstract"
 	@echo "... inline"
 	@echo "... virtual"
@@ -728,6 +796,12 @@ help:
 	@echo "... const/01_const_extern.o"
 	@echo "... const/01_const_extern.i"
 	@echo "... const/01_const_extern.s"
+	@echo "... extern/12_extern_cpp_invoke_c.o"
+	@echo "... extern/12_extern_cpp_invoke_c.i"
+	@echo "... extern/12_extern_cpp_invoke_c.s"
+	@echo "... extern/add.o"
+	@echo "... extern/add.i"
+	@echo "... extern/add.s"
 	@echo "... inline/04_inline.o"
 	@echo "... inline/04_inline.i"
 	@echo "... inline/04_inline.s"

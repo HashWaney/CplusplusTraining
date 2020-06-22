@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wangqing/Desktop/JNI/CPP/Review/extern/12_extern_cpp_invoke_c.cpp
+iostream
+/Users/wangqing/Desktop/JNI/CPP/Review/extern/iostream
+add.h
+/Users/wangqing/Desktop/JNI/CPP/Review/extern/add.h
+
+/Users/wangqing/Desktop/JNI/CPP/Review/extern/add.h
+
