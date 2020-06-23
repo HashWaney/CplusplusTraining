@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wangqing/Desktop/JNI/CPP/Review/decltype/21_decltype.cpp
+iostream
+/Users/wangqing/Desktop/JNI/CPP/Review/decltype/iostream
+vector
+/Users/wangqing/Desktop/JNI/CPP/Review/decltype/vector
+

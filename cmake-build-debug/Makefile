@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named referptr
+
+# Build rule for target.
+referptr: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 referptr
+.PHONY : referptr
+
+# fast build rule for target.
+referptr/fast:
+	$(MAKE) -f CMakeFiles/referptr.dir/build.make CMakeFiles/referptr.dir/build
+.PHONY : referptr/fast
+
+#=============================================================================
 # Target rules for targets named assert
 
 # Build rule for target.
@@ -241,6 +254,19 @@ friend/fast:
 .PHONY : friend/fast
 
 #=============================================================================
+# Target rules for targets named decltype
+
+# Build rule for target.
+decltype: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 decltype
+.PHONY : decltype
+
+# fast build rule for target.
+decltype/fast:
+	$(MAKE) -f CMakeFiles/decltype.dir/build.make CMakeFiles/decltype.dir/build
+.PHONY : decltype/fast
+
+#=============================================================================
 # Target rules for targets named struct
 
 # Build rule for target.
@@ -369,6 +395,19 @@ cast: cmake_check_build_system
 cast/fast:
 	$(MAKE) -f CMakeFiles/cast.dir/build.make CMakeFiles/cast.dir/build
 .PHONY : cast/fast
+
+#=============================================================================
+# Target rules for targets named macro
+
+# Build rule for target.
+macro: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 macro
+.PHONY : macro
+
+# fast build rule for target.
+macro/fast:
+	$(MAKE) -f CMakeFiles/macro.dir/build.make CMakeFiles/macro.dir/build
+.PHONY : macro/fast
 
 #=============================================================================
 # Target rules for targets named virtual_impl
@@ -544,6 +583,33 @@ const/01_const_extern.cpp.s:
 	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/const/01_const_extern.cpp.s
 .PHONY : const/01_const_extern.cpp.s
 
+decltype/21_decltype.o: decltype/21_decltype.cpp.o
+
+.PHONY : decltype/21_decltype.o
+
+# target to build an object file
+decltype/21_decltype.cpp.o:
+	$(MAKE) -f CMakeFiles/decltype.dir/build.make CMakeFiles/decltype.dir/decltype/21_decltype.cpp.o
+.PHONY : decltype/21_decltype.cpp.o
+
+decltype/21_decltype.i: decltype/21_decltype.cpp.i
+
+.PHONY : decltype/21_decltype.i
+
+# target to preprocess a source file
+decltype/21_decltype.cpp.i:
+	$(MAKE) -f CMakeFiles/decltype.dir/build.make CMakeFiles/decltype.dir/decltype/21_decltype.cpp.i
+.PHONY : decltype/21_decltype.cpp.i
+
+decltype/21_decltype.s: decltype/21_decltype.cpp.s
+
+.PHONY : decltype/21_decltype.s
+
+# target to generate assembly for a file
+decltype/21_decltype.cpp.s:
+	$(MAKE) -f CMakeFiles/decltype.dir/build.make CMakeFiles/decltype.dir/decltype/21_decltype.cpp.s
+.PHONY : decltype/21_decltype.cpp.s
+
 double_colon/19_double_colon.o: double_colon/19_double_colon.cpp.o
 
 .PHONY : double_colon/19_double_colon.o
@@ -679,6 +745,33 @@ inline/04_inline.cpp.s:
 	$(MAKE) -f CMakeFiles/inline.dir/build.make CMakeFiles/inline.dir/inline/04_inline.cpp.s
 .PHONY : inline/04_inline.cpp.s
 
+macro/23_macro.o: macro/23_macro.cpp.o
+
+.PHONY : macro/23_macro.o
+
+# target to build an object file
+macro/23_macro.cpp.o:
+	$(MAKE) -f CMakeFiles/macro.dir/build.make CMakeFiles/macro.dir/macro/23_macro.cpp.o
+.PHONY : macro/23_macro.cpp.o
+
+macro/23_macro.i: macro/23_macro.cpp.i
+
+.PHONY : macro/23_macro.i
+
+# target to preprocess a source file
+macro/23_macro.cpp.i:
+	$(MAKE) -f CMakeFiles/macro.dir/build.make CMakeFiles/macro.dir/macro/23_macro.cpp.i
+.PHONY : macro/23_macro.cpp.i
+
+macro/23_macro.s: macro/23_macro.cpp.s
+
+.PHONY : macro/23_macro.s
+
+# target to generate assembly for a file
+macro/23_macro.cpp.s:
+	$(MAKE) -f CMakeFiles/macro.dir/build.make CMakeFiles/macro.dir/macro/23_macro.cpp.s
+.PHONY : macro/23_macro.cpp.s
+
 pure_abstrace/06_impl_abstract.o: pure_abstrace/06_impl_abstract.cpp.o
 
 .PHONY : pure_abstrace/06_impl_abstract.o
@@ -759,6 +852,33 @@ pure_abstrace/06_virtual_become_abstract.s: pure_abstrace/06_virtual_become_abst
 pure_abstrace/06_virtual_become_abstract.cpp.s:
 	$(MAKE) -f CMakeFiles/virtual_become_abstract.dir/build.make CMakeFiles/virtual_become_abstract.dir/pure_abstrace/06_virtual_become_abstract.cpp.s
 .PHONY : pure_abstrace/06_virtual_become_abstract.cpp.s
+
+referptr/22_referptr.o: referptr/22_referptr.cpp.o
+
+.PHONY : referptr/22_referptr.o
+
+# target to build an object file
+referptr/22_referptr.cpp.o:
+	$(MAKE) -f CMakeFiles/referptr.dir/build.make CMakeFiles/referptr.dir/referptr/22_referptr.cpp.o
+.PHONY : referptr/22_referptr.cpp.o
+
+referptr/22_referptr.i: referptr/22_referptr.cpp.i
+
+.PHONY : referptr/22_referptr.i
+
+# target to preprocess a source file
+referptr/22_referptr.cpp.i:
+	$(MAKE) -f CMakeFiles/referptr.dir/build.make CMakeFiles/referptr.dir/referptr/22_referptr.cpp.i
+.PHONY : referptr/22_referptr.cpp.i
+
+referptr/22_referptr.s: referptr/22_referptr.cpp.s
+
+.PHONY : referptr/22_referptr.s
+
+# target to generate assembly for a file
+referptr/22_referptr.cpp.s:
+	$(MAKE) -f CMakeFiles/referptr.dir/build.make CMakeFiles/referptr.dir/referptr/22_referptr.cpp.s
+.PHONY : referptr/22_referptr.cpp.s
 
 sizeof/05_sizeof.o: sizeof/05_sizeof.cpp.o
 
@@ -1064,6 +1184,7 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... referptr"
 	@echo "... assert"
 	@echo "... cpppoly"
 	@echo "... using"
@@ -1074,6 +1195,7 @@ help:
 	@echo "... enum"
 	@echo "... static"
 	@echo "... friend"
+	@echo "... decltype"
 	@echo "... struct"
 	@echo "... virtual_become_abstract"
 	@echo "... inline"
@@ -1085,6 +1207,7 @@ help:
 	@echo "... volatile"
 	@echo "... pure_abstrace"
 	@echo "... cast"
+	@echo "... macro"
 	@echo "... virtual_impl"
 	@echo "... double_colon"
 	@echo "... const"
@@ -1103,6 +1226,9 @@ help:
 	@echo "... const/01_const_extern.o"
 	@echo "... const/01_const_extern.i"
 	@echo "... const/01_const_extern.s"
+	@echo "... decltype/21_decltype.o"
+	@echo "... decltype/21_decltype.i"
+	@echo "... decltype/21_decltype.s"
 	@echo "... double_colon/19_double_colon.o"
 	@echo "... double_colon/19_double_colon.i"
 	@echo "... double_colon/19_double_colon.s"
@@ -1118,6 +1244,9 @@ help:
 	@echo "... inline/04_inline.o"
 	@echo "... inline/04_inline.i"
 	@echo "... inline/04_inline.s"
+	@echo "... macro/23_macro.o"
+	@echo "... macro/23_macro.i"
+	@echo "... macro/23_macro.s"
 	@echo "... pure_abstrace/06_impl_abstract.o"
 	@echo "... pure_abstrace/06_impl_abstract.i"
 	@echo "... pure_abstrace/06_impl_abstract.s"
@@ -1127,6 +1256,9 @@ help:
 	@echo "... pure_abstrace/06_virtual_become_abstract.o"
 	@echo "... pure_abstrace/06_virtual_become_abstract.i"
 	@echo "... pure_abstrace/06_virtual_become_abstract.s"
+	@echo "... referptr/22_referptr.o"
+	@echo "... referptr/22_referptr.i"
+	@echo "... referptr/22_referptr.s"
 	@echo "... sizeof/05_sizeof.o"
 	@echo "... sizeof/05_sizeof.i"
 	@echo "... sizeof/05_sizeof.s"

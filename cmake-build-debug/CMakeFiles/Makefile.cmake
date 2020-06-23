@@ -52,6 +52,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/referptr.dir/DependInfo.cmake"
   "CMakeFiles/assert.dir/DependInfo.cmake"
   "CMakeFiles/cpppoly.dir/DependInfo.cmake"
   "CMakeFiles/using.dir/DependInfo.cmake"
@@ -62,6 +63,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/enum.dir/DependInfo.cmake"
   "CMakeFiles/static.dir/DependInfo.cmake"
   "CMakeFiles/friend.dir/DependInfo.cmake"
+  "CMakeFiles/decltype.dir/DependInfo.cmake"
   "CMakeFiles/struct.dir/DependInfo.cmake"
   "CMakeFiles/virtual_become_abstract.dir/DependInfo.cmake"
   "CMakeFiles/inline.dir/DependInfo.cmake"
@@ -72,6 +74,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/volatile.dir/DependInfo.cmake"
   "CMakeFiles/pure_abstrace.dir/DependInfo.cmake"
   "CMakeFiles/cast.dir/DependInfo.cmake"
+  "CMakeFiles/macro.dir/DependInfo.cmake"
   "CMakeFiles/virtual_impl.dir/DependInfo.cmake"
   "CMakeFiles/double_colon.dir/DependInfo.cmake"
   "CMakeFiles/const.dir/DependInfo.cmake"

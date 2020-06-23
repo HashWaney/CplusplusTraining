@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wangqing/Desktop/JNI/CPP/Review/macro/23_macro.cpp
+iostream
+-
+string
+/Users/wangqing/Desktop/JNI/CPP/Review/macro/string
+stdio.h
+/Users/wangqing/Desktop/JNI/CPP/Review/macro/stdio.h
+
