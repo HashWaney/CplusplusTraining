@@ -52,6 +52,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/using.dir/DependInfo.cmake"
   "CMakeFiles/explicit.dir/DependInfo.cmake"
   "CMakeFiles/poly.dir/DependInfo.cmake"
   "CMakeFiles/union.dir/DependInfo.cmake"
@@ -66,6 +67,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/sizeof.dir/DependInfo.cmake"
   "CMakeFiles/vptr_vtable.dir/DependInfo.cmake"
   "CMakeFiles/this.dir/DependInfo.cmake"
+  "CMakeFiles/using2.dir/DependInfo.cmake"
   "CMakeFiles/volatile.dir/DependInfo.cmake"
   "CMakeFiles/pure_abstrace.dir/DependInfo.cmake"
   "CMakeFiles/cast.dir/DependInfo.cmake"

@@ -45,9 +45,12 @@ union {
 int adda(int x, int y) {
     return x + y;
 }
+void print()
+{
+    cout<<"test union function pointer"<<endl;
+}
 
 Function fp = &adda; // fp是一个函数指针 指向一个函数的地址，&adda就是取出adda对应的函数地址。
-
 int main() {
 
 
@@ -60,6 +63,7 @@ int main() {
 //    fp = &haha.add;//    Cannot take the address of an rvalue of type 'int'
 
     int a = (*fp)(1, 4444); // 函数指针的使用
+
     cout << "aaaaa === " << a << endl;
 
     return 0;

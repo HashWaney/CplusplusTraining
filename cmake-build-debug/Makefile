@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named using
+
+# Build rule for target.
+using: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 using
+.PHONY : using
+
+# fast build rule for target.
+using/fast:
+	$(MAKE) -f CMakeFiles/using.dir/build.make CMakeFiles/using.dir/build
+.PHONY : using/fast
+
+#=============================================================================
 # Target rules for targets named explicit
 
 # Build rule for target.
@@ -291,6 +304,19 @@ this: cmake_check_build_system
 this/fast:
 	$(MAKE) -f CMakeFiles/this.dir/build.make CMakeFiles/this.dir/build
 .PHONY : this/fast
+
+#=============================================================================
+# Target rules for targets named using2
+
+# Build rule for target.
+using2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 using2
+.PHONY : using2
+
+# fast build rule for target.
+using2/fast:
+	$(MAKE) -f CMakeFiles/using2.dir/build.make CMakeFiles/using2.dir/build
+.PHONY : using2/fast
 
 #=============================================================================
 # Target rules for targets named volatile
@@ -816,6 +842,60 @@ union/14_union.cpp.s:
 	$(MAKE) -f CMakeFiles/union.dir/build.make CMakeFiles/union.dir/union/14_union.cpp.s
 .PHONY : union/14_union.cpp.s
 
+using/18_using_change_visit.o: using/18_using_change_visit.cpp.o
+
+.PHONY : using/18_using_change_visit.o
+
+# target to build an object file
+using/18_using_change_visit.cpp.o:
+	$(MAKE) -f CMakeFiles/using2.dir/build.make CMakeFiles/using2.dir/using/18_using_change_visit.cpp.o
+.PHONY : using/18_using_change_visit.cpp.o
+
+using/18_using_change_visit.i: using/18_using_change_visit.cpp.i
+
+.PHONY : using/18_using_change_visit.i
+
+# target to preprocess a source file
+using/18_using_change_visit.cpp.i:
+	$(MAKE) -f CMakeFiles/using2.dir/build.make CMakeFiles/using2.dir/using/18_using_change_visit.cpp.i
+.PHONY : using/18_using_change_visit.cpp.i
+
+using/18_using_change_visit.s: using/18_using_change_visit.cpp.s
+
+.PHONY : using/18_using_change_visit.s
+
+# target to generate assembly for a file
+using/18_using_change_visit.cpp.s:
+	$(MAKE) -f CMakeFiles/using2.dir/build.make CMakeFiles/using2.dir/using/18_using_change_visit.cpp.s
+.PHONY : using/18_using_change_visit.cpp.s
+
+using/18_using_global.o: using/18_using_global.cpp.o
+
+.PHONY : using/18_using_global.o
+
+# target to build an object file
+using/18_using_global.cpp.o:
+	$(MAKE) -f CMakeFiles/using.dir/build.make CMakeFiles/using.dir/using/18_using_global.cpp.o
+.PHONY : using/18_using_global.cpp.o
+
+using/18_using_global.i: using/18_using_global.cpp.i
+
+.PHONY : using/18_using_global.i
+
+# target to preprocess a source file
+using/18_using_global.cpp.i:
+	$(MAKE) -f CMakeFiles/using.dir/build.make CMakeFiles/using.dir/using/18_using_global.cpp.i
+.PHONY : using/18_using_global.cpp.i
+
+using/18_using_global.s: using/18_using_global.cpp.s
+
+.PHONY : using/18_using_global.s
+
+# target to generate assembly for a file
+using/18_using_global.cpp.s:
+	$(MAKE) -f CMakeFiles/using.dir/build.make CMakeFiles/using.dir/using/18_using_global.cpp.s
+.PHONY : using/18_using_global.cpp.s
+
 virtual/08_virtual.o: virtual/08_virtual.cpp.o
 
 .PHONY : virtual/08_virtual.o
@@ -905,6 +985,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... using"
 	@echo "... explicit"
 	@echo "... poly"
 	@echo "... union"
@@ -919,6 +1000,7 @@ help:
 	@echo "... sizeof"
 	@echo "... vptr_vtable"
 	@echo "... this"
+	@echo "... using2"
 	@echo "... volatile"
 	@echo "... pure_abstrace"
 	@echo "... cast"
@@ -975,6 +1057,12 @@ help:
 	@echo "... union/14_union.o"
 	@echo "... union/14_union.i"
 	@echo "... union/14_union.s"
+	@echo "... using/18_using_change_visit.o"
+	@echo "... using/18_using_change_visit.i"
+	@echo "... using/18_using_change_visit.s"
+	@echo "... using/18_using_global.o"
+	@echo "... using/18_using_global.i"
+	@echo "... using/18_using_global.s"
 	@echo "... virtual/08_virtual.o"
 	@echo "... virtual/08_virtual.i"
 	@echo "... virtual/08_virtual.s"

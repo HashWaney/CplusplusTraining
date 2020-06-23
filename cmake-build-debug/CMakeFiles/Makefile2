@@ -53,6 +53,7 @@ CMAKE_BINARY_DIR = /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/using.dir/all
 all: CMakeFiles/explicit.dir/all
 all: CMakeFiles/poly.dir/all
 all: CMakeFiles/union.dir/all
@@ -67,6 +68,7 @@ all: CMakeFiles/static.dir/all
 all: CMakeFiles/sizeof.dir/all
 all: CMakeFiles/vptr_vtable.dir/all
 all: CMakeFiles/this.dir/all
+all: CMakeFiles/using2.dir/all
 all: CMakeFiles/volatile.dir/all
 all: CMakeFiles/pure_abstrace.dir/all
 all: CMakeFiles/cast.dir/all
@@ -81,6 +83,7 @@ preinstall:
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: CMakeFiles/using.dir/clean
 clean: CMakeFiles/explicit.dir/clean
 clean: CMakeFiles/poly.dir/clean
 clean: CMakeFiles/union.dir/clean
@@ -95,6 +98,7 @@ clean: CMakeFiles/static.dir/clean
 clean: CMakeFiles/sizeof.dir/clean
 clean: CMakeFiles/vptr_vtable.dir/clean
 clean: CMakeFiles/this.dir/clean
+clean: CMakeFiles/using2.dir/clean
 clean: CMakeFiles/volatile.dir/clean
 clean: CMakeFiles/pure_abstrace.dir/clean
 clean: CMakeFiles/cast.dir/clean
@@ -102,6 +106,33 @@ clean: CMakeFiles/virtual_impl.dir/clean
 clean: CMakeFiles/const.dir/clean
 
 .PHONY : clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/using.dir
+
+# All Build rule for target.
+CMakeFiles/using.dir/all:
+	$(MAKE) -f CMakeFiles/using.dir/build.make CMakeFiles/using.dir/depend
+	$(MAKE) -f CMakeFiles/using.dir/build.make CMakeFiles/using.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=30,31 "Built target using"
+.PHONY : CMakeFiles/using.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/using.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/using.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/using.dir/rule
+
+# Convenience name for target.
+using: CMakeFiles/using.dir/rule
+
+.PHONY : using
+
+# clean rule for target.
+CMakeFiles/using.dir/clean:
+	$(MAKE) -f CMakeFiles/using.dir/build.make CMakeFiles/using.dir/clean
+.PHONY : CMakeFiles/using.dir/clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/explicit.dir
@@ -299,7 +330,7 @@ CMakeFiles/assert.dir/clean:
 CMakeFiles/virtual_become_abstract.dir/all:
 	$(MAKE) -f CMakeFiles/virtual_become_abstract.dir/build.make CMakeFiles/virtual_become_abstract.dir/depend
 	$(MAKE) -f CMakeFiles/virtual_become_abstract.dir/build.make CMakeFiles/virtual_become_abstract.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=32,33 "Built target virtual_become_abstract"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=36,37 "Built target virtual_become_abstract"
 .PHONY : CMakeFiles/virtual_become_abstract.dir/all
 
 # Build rule for subdir invocation for target.
@@ -353,7 +384,7 @@ CMakeFiles/inline.dir/clean:
 CMakeFiles/virtual.dir/all:
 	$(MAKE) -f CMakeFiles/virtual.dir/build.make CMakeFiles/virtual.dir/depend
 	$(MAKE) -f CMakeFiles/virtual.dir/build.make CMakeFiles/virtual.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=30,31 "Built target virtual"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=34,35 "Built target virtual"
 .PHONY : CMakeFiles/virtual.dir/all
 
 # Build rule for subdir invocation for target.
@@ -434,7 +465,7 @@ CMakeFiles/sizeof.dir/clean:
 CMakeFiles/vptr_vtable.dir/all:
 	$(MAKE) -f CMakeFiles/vptr_vtable.dir/build.make CMakeFiles/vptr_vtable.dir/depend
 	$(MAKE) -f CMakeFiles/vptr_vtable.dir/build.make CMakeFiles/vptr_vtable.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=38,39 "Built target vptr_vtable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=42,43 "Built target vptr_vtable"
 .PHONY : CMakeFiles/vptr_vtable.dir/all
 
 # Build rule for subdir invocation for target.
@@ -482,13 +513,40 @@ CMakeFiles/this.dir/clean:
 .PHONY : CMakeFiles/this.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/using2.dir
+
+# All Build rule for target.
+CMakeFiles/using2.dir/all:
+	$(MAKE) -f CMakeFiles/using2.dir/build.make CMakeFiles/using2.dir/depend
+	$(MAKE) -f CMakeFiles/using2.dir/build.make CMakeFiles/using2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=32,33 "Built target using2"
+.PHONY : CMakeFiles/using2.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/using2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles 2
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/using2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles 0
+.PHONY : CMakeFiles/using2.dir/rule
+
+# Convenience name for target.
+using2: CMakeFiles/using2.dir/rule
+
+.PHONY : using2
+
+# clean rule for target.
+CMakeFiles/using2.dir/clean:
+	$(MAKE) -f CMakeFiles/using2.dir/build.make CMakeFiles/using2.dir/clean
+.PHONY : CMakeFiles/using2.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/volatile.dir
 
 # All Build rule for target.
 CMakeFiles/volatile.dir/all:
 	$(MAKE) -f CMakeFiles/volatile.dir/build.make CMakeFiles/volatile.dir/depend
 	$(MAKE) -f CMakeFiles/volatile.dir/build.make CMakeFiles/volatile.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=36,37 "Built target volatile"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=40,41 "Built target volatile"
 .PHONY : CMakeFiles/volatile.dir/all
 
 # Build rule for subdir invocation for target.
@@ -569,7 +627,7 @@ CMakeFiles/cast.dir/clean:
 CMakeFiles/virtual_impl.dir/all:
 	$(MAKE) -f CMakeFiles/virtual_impl.dir/build.make CMakeFiles/virtual_impl.dir/depend
 	$(MAKE) -f CMakeFiles/virtual_impl.dir/build.make CMakeFiles/virtual_impl.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=34,35 "Built target virtual_impl"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles --progress-num=38,39 "Built target virtual_impl"
 .PHONY : CMakeFiles/virtual_impl.dir/all
 
 # Build rule for subdir invocation for target.
