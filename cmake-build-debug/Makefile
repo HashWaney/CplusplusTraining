@@ -150,6 +150,19 @@ union/fast:
 .PHONY : union/fast
 
 #=============================================================================
+# Target rules for targets named friend
+
+# Build rule for target.
+friend: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 friend
+.PHONY : friend
+
+# fast build rule for target.
+friend/fast:
+	$(MAKE) -f CMakeFiles/friend.dir/build.make CMakeFiles/friend.dir/build
+.PHONY : friend/fast
+
+#=============================================================================
 # Target rules for targets named cpppoly
 
 # Build rule for target.
@@ -505,6 +518,33 @@ explicit/16_explicit.s: explicit/16_explicit.cpp.s
 explicit/16_explicit.cpp.s:
 	$(MAKE) -f CMakeFiles/explicit.dir/build.make CMakeFiles/explicit.dir/explicit/16_explicit.cpp.s
 .PHONY : explicit/16_explicit.cpp.s
+
+friend/17_friend.o: friend/17_friend.cpp.o
+
+.PHONY : friend/17_friend.o
+
+# target to build an object file
+friend/17_friend.cpp.o:
+	$(MAKE) -f CMakeFiles/friend.dir/build.make CMakeFiles/friend.dir/friend/17_friend.cpp.o
+.PHONY : friend/17_friend.cpp.o
+
+friend/17_friend.i: friend/17_friend.cpp.i
+
+.PHONY : friend/17_friend.i
+
+# target to preprocess a source file
+friend/17_friend.cpp.i:
+	$(MAKE) -f CMakeFiles/friend.dir/build.make CMakeFiles/friend.dir/friend/17_friend.cpp.i
+.PHONY : friend/17_friend.cpp.i
+
+friend/17_friend.s: friend/17_friend.cpp.s
+
+.PHONY : friend/17_friend.s
+
+# target to generate assembly for a file
+friend/17_friend.cpp.s:
+	$(MAKE) -f CMakeFiles/friend.dir/build.make CMakeFiles/friend.dir/friend/17_friend.cpp.s
+.PHONY : friend/17_friend.cpp.s
 
 inline/04_inline.o: inline/04_inline.cpp.o
 
@@ -868,6 +908,7 @@ help:
 	@echo "... explicit"
 	@echo "... poly"
 	@echo "... union"
+	@echo "... friend"
 	@echo "... cpppoly"
 	@echo "... struct"
 	@echo "... assert"
@@ -901,6 +942,9 @@ help:
 	@echo "... explicit/16_explicit.o"
 	@echo "... explicit/16_explicit.i"
 	@echo "... explicit/16_explicit.s"
+	@echo "... friend/17_friend.o"
+	@echo "... friend/17_friend.i"
+	@echo "... friend/17_friend.s"
 	@echo "... inline/04_inline.o"
 	@echo "... inline/04_inline.i"
 	@echo "... inline/04_inline.s"

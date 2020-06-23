@@ -55,6 +55,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/explicit.dir/DependInfo.cmake"
   "CMakeFiles/poly.dir/DependInfo.cmake"
   "CMakeFiles/union.dir/DependInfo.cmake"
+  "CMakeFiles/friend.dir/DependInfo.cmake"
   "CMakeFiles/cpppoly.dir/DependInfo.cmake"
   "CMakeFiles/struct.dir/DependInfo.cmake"
   "CMakeFiles/assert.dir/DependInfo.cmake"
