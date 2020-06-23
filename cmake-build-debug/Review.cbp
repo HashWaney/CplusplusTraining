@@ -37,6 +37,48 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="explicit">
+				<Option output="/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/explicit" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 explicit"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="explicit/fast">
+				<Option output="/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/explicit" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 explicit/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="poly">
 				<Option output="/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/poly" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug"/>
@@ -766,6 +808,9 @@
 		</Unit>
 		<Unit filename="/Users/wangqing/Desktop/JNI/CPP/Review/const/01_const_extern.cpp">
 			<Option target="const"/>
+		</Unit>
+		<Unit filename="/Users/wangqing/Desktop/JNI/CPP/Review/explicit/16_explicit.cpp">
+			<Option target="explicit"/>
 		</Unit>
 		<Unit filename="/Users/wangqing/Desktop/JNI/CPP/Review/inline/04_inline.cpp">
 			<Option target="inline"/>

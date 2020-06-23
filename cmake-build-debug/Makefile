@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named explicit
+
+# Build rule for target.
+explicit: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 explicit
+.PHONY : explicit
+
+# fast build rule for target.
+explicit/fast:
+	$(MAKE) -f CMakeFiles/explicit.dir/build.make CMakeFiles/explicit.dir/build
+.PHONY : explicit/fast
+
+#=============================================================================
 # Target rules for targets named poly
 
 # Build rule for target.
@@ -465,6 +478,33 @@ const/01_const_extern.s: const/01_const_extern.cpp.s
 const/01_const_extern.cpp.s:
 	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/const/01_const_extern.cpp.s
 .PHONY : const/01_const_extern.cpp.s
+
+explicit/16_explicit.o: explicit/16_explicit.cpp.o
+
+.PHONY : explicit/16_explicit.o
+
+# target to build an object file
+explicit/16_explicit.cpp.o:
+	$(MAKE) -f CMakeFiles/explicit.dir/build.make CMakeFiles/explicit.dir/explicit/16_explicit.cpp.o
+.PHONY : explicit/16_explicit.cpp.o
+
+explicit/16_explicit.i: explicit/16_explicit.cpp.i
+
+.PHONY : explicit/16_explicit.i
+
+# target to preprocess a source file
+explicit/16_explicit.cpp.i:
+	$(MAKE) -f CMakeFiles/explicit.dir/build.make CMakeFiles/explicit.dir/explicit/16_explicit.cpp.i
+.PHONY : explicit/16_explicit.cpp.i
+
+explicit/16_explicit.s: explicit/16_explicit.cpp.s
+
+.PHONY : explicit/16_explicit.s
+
+# target to generate assembly for a file
+explicit/16_explicit.cpp.s:
+	$(MAKE) -f CMakeFiles/explicit.dir/build.make CMakeFiles/explicit.dir/explicit/16_explicit.cpp.s
+.PHONY : explicit/16_explicit.cpp.s
 
 inline/04_inline.o: inline/04_inline.cpp.o
 
@@ -825,6 +865,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... explicit"
 	@echo "... poly"
 	@echo "... union"
 	@echo "... cpppoly"
@@ -857,6 +898,9 @@ help:
 	@echo "... const/01_const_extern.o"
 	@echo "... const/01_const_extern.i"
 	@echo "... const/01_const_extern.s"
+	@echo "... explicit/16_explicit.o"
+	@echo "... explicit/16_explicit.i"
+	@echo "... explicit/16_explicit.s"
 	@echo "... inline/04_inline.o"
 	@echo "... inline/04_inline.i"
 	@echo "... inline/04_inline.s"
