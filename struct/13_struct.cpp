@@ -21,8 +21,12 @@
 #include "stdio.h"
 
 struct Base {
+public:
     int v;
     long a;
+    void fnc3() {
+        printf("%s\n", "struct invoke fnc3 : hello world");
+    };
 
 //    private int nb;
 private:
@@ -40,6 +44,7 @@ void Base() {
 int main() {
     struct Base base;
     base.v = 1;
+    base.fnc3();
     printf("$$$struct Base %d\n", base.v);
     Base();
     return 0;

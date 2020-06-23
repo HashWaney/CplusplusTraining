@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named assert
+
+# Build rule for target.
+assert: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 assert
+.PHONY : assert
+
+# fast build rule for target.
+assert/fast:
+	$(MAKE) -f CMakeFiles/assert.dir/build.make CMakeFiles/assert.dir/build
+.PHONY : assert/fast
+
+#=============================================================================
+# Target rules for targets named cpppoly
+
+# Build rule for target.
+cpppoly: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cpppoly
+.PHONY : cpppoly
+
+# fast build rule for target.
+cpppoly/fast:
+	$(MAKE) -f CMakeFiles/cpppoly.dir/build.make CMakeFiles/cpppoly.dir/build
+.PHONY : cpppoly/fast
+
+#=============================================================================
 # Target rules for targets named using
 
 # Build rule for target.
@@ -122,6 +148,19 @@ using: cmake_check_build_system
 using/fast:
 	$(MAKE) -f CMakeFiles/using.dir/build.make CMakeFiles/using.dir/build
 .PHONY : using/fast
+
+#=============================================================================
+# Target rules for targets named using2
+
+# Build rule for target.
+using2: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 using2
+.PHONY : using2
+
+# fast build rule for target.
+using2/fast:
+	$(MAKE) -f CMakeFiles/using2.dir/build.make CMakeFiles/using2.dir/build
+.PHONY : using2/fast
 
 #=============================================================================
 # Target rules for targets named explicit
@@ -163,6 +202,32 @@ union/fast:
 .PHONY : union/fast
 
 #=============================================================================
+# Target rules for targets named enum
+
+# Build rule for target.
+enum: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 enum
+.PHONY : enum
+
+# fast build rule for target.
+enum/fast:
+	$(MAKE) -f CMakeFiles/enum.dir/build.make CMakeFiles/enum.dir/build
+.PHONY : enum/fast
+
+#=============================================================================
+# Target rules for targets named static
+
+# Build rule for target.
+static: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 static
+.PHONY : static
+
+# fast build rule for target.
+static/fast:
+	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/build
+.PHONY : static/fast
+
+#=============================================================================
 # Target rules for targets named friend
 
 # Build rule for target.
@@ -176,19 +241,6 @@ friend/fast:
 .PHONY : friend/fast
 
 #=============================================================================
-# Target rules for targets named cpppoly
-
-# Build rule for target.
-cpppoly: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 cpppoly
-.PHONY : cpppoly
-
-# fast build rule for target.
-cpppoly/fast:
-	$(MAKE) -f CMakeFiles/cpppoly.dir/build.make CMakeFiles/cpppoly.dir/build
-.PHONY : cpppoly/fast
-
-#=============================================================================
 # Target rules for targets named struct
 
 # Build rule for target.
@@ -200,19 +252,6 @@ struct: cmake_check_build_system
 struct/fast:
 	$(MAKE) -f CMakeFiles/struct.dir/build.make CMakeFiles/struct.dir/build
 .PHONY : struct/fast
-
-#=============================================================================
-# Target rules for targets named assert
-
-# Build rule for target.
-assert: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 assert
-.PHONY : assert
-
-# fast build rule for target.
-assert/fast:
-	$(MAKE) -f CMakeFiles/assert.dir/build.make CMakeFiles/assert.dir/build
-.PHONY : assert/fast
 
 #=============================================================================
 # Target rules for targets named virtual_become_abstract
@@ -254,19 +293,6 @@ virtual/fast:
 .PHONY : virtual/fast
 
 #=============================================================================
-# Target rules for targets named static
-
-# Build rule for target.
-static: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 static
-.PHONY : static
-
-# fast build rule for target.
-static/fast:
-	$(MAKE) -f CMakeFiles/static.dir/build.make CMakeFiles/static.dir/build
-.PHONY : static/fast
-
-#=============================================================================
 # Target rules for targets named sizeof
 
 # Build rule for target.
@@ -304,19 +330,6 @@ this: cmake_check_build_system
 this/fast:
 	$(MAKE) -f CMakeFiles/this.dir/build.make CMakeFiles/this.dir/build
 .PHONY : this/fast
-
-#=============================================================================
-# Target rules for targets named using2
-
-# Build rule for target.
-using2: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 using2
-.PHONY : using2
-
-# fast build rule for target.
-using2/fast:
-	$(MAKE) -f CMakeFiles/using2.dir/build.make CMakeFiles/using2.dir/build
-.PHONY : using2/fast
 
 #=============================================================================
 # Target rules for targets named volatile
@@ -369,6 +382,19 @@ virtual_impl: cmake_check_build_system
 virtual_impl/fast:
 	$(MAKE) -f CMakeFiles/virtual_impl.dir/build.make CMakeFiles/virtual_impl.dir/build
 .PHONY : virtual_impl/fast
+
+#=============================================================================
+# Target rules for targets named double_colon
+
+# Build rule for target.
+double_colon: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 double_colon
+.PHONY : double_colon
+
+# fast build rule for target.
+double_colon/fast:
+	$(MAKE) -f CMakeFiles/double_colon.dir/build.make CMakeFiles/double_colon.dir/build
+.PHONY : double_colon/fast
 
 #=============================================================================
 # Target rules for targets named const
@@ -517,6 +543,60 @@ const/01_const_extern.s: const/01_const_extern.cpp.s
 const/01_const_extern.cpp.s:
 	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/const/01_const_extern.cpp.s
 .PHONY : const/01_const_extern.cpp.s
+
+double_colon/19_double_colon.o: double_colon/19_double_colon.cpp.o
+
+.PHONY : double_colon/19_double_colon.o
+
+# target to build an object file
+double_colon/19_double_colon.cpp.o:
+	$(MAKE) -f CMakeFiles/double_colon.dir/build.make CMakeFiles/double_colon.dir/double_colon/19_double_colon.cpp.o
+.PHONY : double_colon/19_double_colon.cpp.o
+
+double_colon/19_double_colon.i: double_colon/19_double_colon.cpp.i
+
+.PHONY : double_colon/19_double_colon.i
+
+# target to preprocess a source file
+double_colon/19_double_colon.cpp.i:
+	$(MAKE) -f CMakeFiles/double_colon.dir/build.make CMakeFiles/double_colon.dir/double_colon/19_double_colon.cpp.i
+.PHONY : double_colon/19_double_colon.cpp.i
+
+double_colon/19_double_colon.s: double_colon/19_double_colon.cpp.s
+
+.PHONY : double_colon/19_double_colon.s
+
+# target to generate assembly for a file
+double_colon/19_double_colon.cpp.s:
+	$(MAKE) -f CMakeFiles/double_colon.dir/build.make CMakeFiles/double_colon.dir/double_colon/19_double_colon.cpp.s
+.PHONY : double_colon/19_double_colon.cpp.s
+
+enum/20_enum.o: enum/20_enum.cpp.o
+
+.PHONY : enum/20_enum.o
+
+# target to build an object file
+enum/20_enum.cpp.o:
+	$(MAKE) -f CMakeFiles/enum.dir/build.make CMakeFiles/enum.dir/enum/20_enum.cpp.o
+.PHONY : enum/20_enum.cpp.o
+
+enum/20_enum.i: enum/20_enum.cpp.i
+
+.PHONY : enum/20_enum.i
+
+# target to preprocess a source file
+enum/20_enum.cpp.i:
+	$(MAKE) -f CMakeFiles/enum.dir/build.make CMakeFiles/enum.dir/enum/20_enum.cpp.i
+.PHONY : enum/20_enum.cpp.i
+
+enum/20_enum.s: enum/20_enum.cpp.s
+
+.PHONY : enum/20_enum.s
+
+# target to generate assembly for a file
+enum/20_enum.cpp.s:
+	$(MAKE) -f CMakeFiles/enum.dir/build.make CMakeFiles/enum.dir/enum/20_enum.cpp.s
+.PHONY : enum/20_enum.cpp.s
 
 explicit/16_explicit.o: explicit/16_explicit.cpp.o
 
@@ -983,28 +1063,30 @@ help:
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... assert"
+	@echo "... cpppoly"
 	@echo "... using"
+	@echo "... using2"
 	@echo "... explicit"
 	@echo "... poly"
 	@echo "... union"
+	@echo "... enum"
+	@echo "... static"
 	@echo "... friend"
-	@echo "... cpppoly"
 	@echo "... struct"
-	@echo "... assert"
 	@echo "... virtual_become_abstract"
 	@echo "... inline"
 	@echo "... virtual"
-	@echo "... static"
 	@echo "... sizeof"
+	@echo "... rebuild_cache"
 	@echo "... vptr_vtable"
 	@echo "... this"
-	@echo "... using2"
 	@echo "... volatile"
 	@echo "... pure_abstrace"
 	@echo "... cast"
 	@echo "... virtual_impl"
+	@echo "... double_colon"
 	@echo "... const"
 	@echo "... Polymorphism/15_c_poly.o"
 	@echo "... Polymorphism/15_c_poly.i"
@@ -1021,6 +1103,12 @@ help:
 	@echo "... const/01_const_extern.o"
 	@echo "... const/01_const_extern.i"
 	@echo "... const/01_const_extern.s"
+	@echo "... double_colon/19_double_colon.o"
+	@echo "... double_colon/19_double_colon.i"
+	@echo "... double_colon/19_double_colon.s"
+	@echo "... enum/20_enum.o"
+	@echo "... enum/20_enum.i"
+	@echo "... enum/20_enum.s"
 	@echo "... explicit/16_explicit.o"
 	@echo "... explicit/16_explicit.i"
 	@echo "... explicit/16_explicit.s"
