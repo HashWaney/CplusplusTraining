@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named DailyPractice_algorithm
+
+# Build rule for target.
+DailyPractice_algorithm: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DailyPractice_algorithm
+.PHONY : DailyPractice_algorithm
+
+# fast build rule for target.
+DailyPractice_algorithm/fast:
+	$(MAKE) -f CMakeFiles/DailyPractice_algorithm.dir/build.make CMakeFiles/DailyPractice_algorithm.dir/build
+.PHONY : DailyPractice_algorithm/fast
+
+#=============================================================================
+# Target rules for targets named DailyPractice_print
+
+# Build rule for target.
+DailyPractice_print: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 DailyPractice_print
+.PHONY : DailyPractice_print
+
+# fast build rule for target.
+DailyPractice_print/fast:
+	$(MAKE) -f CMakeFiles/DailyPractice_print.dir/build.make CMakeFiles/DailyPractice_print.dir/build
+.PHONY : DailyPractice_print/fast
+
+#=============================================================================
 # Target rules for targets named referptr
 
 # Build rule for target.
@@ -447,6 +473,60 @@ const: cmake_check_build_system
 const/fast:
 	$(MAKE) -f CMakeFiles/const.dir/build.make CMakeFiles/const.dir/build
 .PHONY : const/fast
+
+DailyPractice/day1/打印练习.o: DailyPractice/day1/打印练习.cpp.o
+
+.PHONY : DailyPractice/day1/打印练习.o
+
+# target to build an object file
+DailyPractice/day1/打印练习.cpp.o:
+	$(MAKE) -f CMakeFiles/DailyPractice_print.dir/build.make CMakeFiles/DailyPractice_print.dir/DailyPractice/day1/打印练习.cpp.o
+.PHONY : DailyPractice/day1/打印练习.cpp.o
+
+DailyPractice/day1/打印练习.i: DailyPractice/day1/打印练习.cpp.i
+
+.PHONY : DailyPractice/day1/打印练习.i
+
+# target to preprocess a source file
+DailyPractice/day1/打印练习.cpp.i:
+	$(MAKE) -f CMakeFiles/DailyPractice_print.dir/build.make CMakeFiles/DailyPractice_print.dir/DailyPractice/day1/打印练习.cpp.i
+.PHONY : DailyPractice/day1/打印练习.cpp.i
+
+DailyPractice/day1/打印练习.s: DailyPractice/day1/打印练习.cpp.s
+
+.PHONY : DailyPractice/day1/打印练习.s
+
+# target to generate assembly for a file
+DailyPractice/day1/打印练习.cpp.s:
+	$(MAKE) -f CMakeFiles/DailyPractice_print.dir/build.make CMakeFiles/DailyPractice_print.dir/DailyPractice/day1/打印练习.cpp.s
+.PHONY : DailyPractice/day1/打印练习.cpp.s
+
+DailyPractice/day2/二进制求和.o: DailyPractice/day2/二进制求和.cpp.o
+
+.PHONY : DailyPractice/day2/二进制求和.o
+
+# target to build an object file
+DailyPractice/day2/二进制求和.cpp.o:
+	$(MAKE) -f CMakeFiles/DailyPractice_algorithm.dir/build.make CMakeFiles/DailyPractice_algorithm.dir/DailyPractice/day2/二进制求和.cpp.o
+.PHONY : DailyPractice/day2/二进制求和.cpp.o
+
+DailyPractice/day2/二进制求和.i: DailyPractice/day2/二进制求和.cpp.i
+
+.PHONY : DailyPractice/day2/二进制求和.i
+
+# target to preprocess a source file
+DailyPractice/day2/二进制求和.cpp.i:
+	$(MAKE) -f CMakeFiles/DailyPractice_algorithm.dir/build.make CMakeFiles/DailyPractice_algorithm.dir/DailyPractice/day2/二进制求和.cpp.i
+.PHONY : DailyPractice/day2/二进制求和.cpp.i
+
+DailyPractice/day2/二进制求和.s: DailyPractice/day2/二进制求和.cpp.s
+
+.PHONY : DailyPractice/day2/二进制求和.s
+
+# target to generate assembly for a file
+DailyPractice/day2/二进制求和.cpp.s:
+	$(MAKE) -f CMakeFiles/DailyPractice_algorithm.dir/build.make CMakeFiles/DailyPractice_algorithm.dir/DailyPractice/day2/二进制求和.cpp.s
+.PHONY : DailyPractice/day2/二进制求和.cpp.s
 
 Polymorphism/15_c_poly.o: Polymorphism/15_c_poly.c.o
 
@@ -1184,6 +1264,8 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... DailyPractice_algorithm"
+	@echo "... DailyPractice_print"
 	@echo "... referptr"
 	@echo "... assert"
 	@echo "... cpppoly"
@@ -1211,6 +1293,12 @@ help:
 	@echo "... virtual_impl"
 	@echo "... double_colon"
 	@echo "... const"
+	@echo "... DailyPractice/day1/打印练习.o"
+	@echo "... DailyPractice/day1/打印练习.i"
+	@echo "... DailyPractice/day1/打印练习.s"
+	@echo "... DailyPractice/day2/二进制求和.o"
+	@echo "... DailyPractice/day2/二进制求和.i"
+	@echo "... DailyPractice/day2/二进制求和.s"
 	@echo "... Polymorphism/15_c_poly.o"
 	@echo "... Polymorphism/15_c_poly.i"
 	@echo "... Polymorphism/15_c_poly.s"

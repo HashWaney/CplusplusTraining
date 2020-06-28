@@ -52,6 +52,8 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
+  "CMakeFiles/DailyPractice_algorithm.dir/DependInfo.cmake"
+  "CMakeFiles/DailyPractice_print.dir/DependInfo.cmake"
   "CMakeFiles/referptr.dir/DependInfo.cmake"
   "CMakeFiles/assert.dir/DependInfo.cmake"
   "CMakeFiles/cpppoly.dir/DependInfo.cmake"

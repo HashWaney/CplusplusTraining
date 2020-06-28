@@ -27,6 +27,90 @@
 					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
+			<Target title="DailyPractice_algorithm">
+				<Option output="/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/DailyPractice_algorithm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 DailyPractice_algorithm"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DailyPractice_algorithm/fast">
+				<Option output="/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/DailyPractice_algorithm" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 DailyPractice_algorithm/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DailyPractice_print">
+				<Option output="/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/DailyPractice_print" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 DailyPractice_print"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="DailyPractice_print/fast">
+				<Option output="/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/DailyPractice_print" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/Library/Developer/CommandLineTools/usr/bin/../include/c++/v1"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/lib/clang/11.0.3/include"/>
+					<Add directory="/Library/Developer/CommandLineTools/usr/include"/>
+					<Add directory="/System/Library/Frameworks"/>
+					<Add directory="/Library/Frameworks"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 DailyPractice_print/fast"/>
+					<CompileFile command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j12 -f &quot;/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
 			<Target title="referptr">
 				<Option output="/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/referptr" prefix_auto="0" extension_auto="0"/>
 				<Option working_dir="/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug"/>
@@ -1130,6 +1214,12 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/wangqing/Desktop/JNI/CPP/Review/DailyPractice/day1/打印练习.cpp">
+			<Option target="DailyPractice_print"/>
+		</Unit>
+		<Unit filename="/Users/wangqing/Desktop/JNI/CPP/Review/DailyPractice/day2/二进制求和.cpp">
+			<Option target="DailyPractice_algorithm"/>
+		</Unit>
 		<Unit filename="/Users/wangqing/Desktop/JNI/CPP/Review/Polymorphism/15_c_poly.c">
 			<Option target="poly"/>
 		</Unit>

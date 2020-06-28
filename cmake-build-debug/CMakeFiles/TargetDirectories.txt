@@ -1,4 +1,6 @@
 /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/DailyPractice_algorithm.dir
+/Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/DailyPractice_print.dir
 /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/referptr.dir
 /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/assert.dir
 /Users/wangqing/Desktop/JNI/CPP/Review/cmake-build-debug/CMakeFiles/cpppoly.dir

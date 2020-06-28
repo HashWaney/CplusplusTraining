@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wangqing/Desktop/JNI/CPP/Review/DailyPractice/day1/打印练习.cpp
+iostream
+/Users/wangqing/Desktop/JNI/CPP/Review/DailyPractice/day1/iostream
+
