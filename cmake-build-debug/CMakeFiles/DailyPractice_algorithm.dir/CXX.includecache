@@ -1,0 +1,12 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/wangqing/Desktop/JNI/CPP/Review/DailyPractice/day2/二进制求和.cpp
+iostream
+/Users/wangqing/Desktop/JNI/CPP/Review/DailyPractice/day2/iostream
+

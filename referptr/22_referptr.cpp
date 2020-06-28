@@ -22,7 +22,11 @@ void test_ref(int &r) {
 // 引用不能更换目标
 // 指针可以随时改变指向，但是引用只能指向初始化时指向的对象，无法改变
 
-
+/**
+ * @author HashWaney
+ * @time 2020.6.23 18:04
+ * @desc pointer and reference
+ */
 void feature_life() {
     int child = 1;
     int adult = 2;
